@@ -1,0 +1,859 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Struct CSGTreeBrush
+   | RealtimeCSG </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Struct CSGTreeBrush
+   | RealtimeCSG ">
+    <meta name="generator" content="docfx 2.31.0.0">
+  
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Oswald|Roboto+Condensed" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+  </head>  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo3_24_2padding.png" alt="RealtimeCSG">
+                <span class="logoFirst">realtime</span> <span class="logoSecond">CSG</span>
+              </a>    </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="RealtimeCSG.Foundation.CSGTreeBrush">
+  <h1 id="RealtimeCSG_Foundation_CSGTreeBrush" data-uid="RealtimeCSG.Foundation.CSGTreeBrush">Struct CSGTreeBrush
+  </h1>
+  <div class="markdown level0 summary"><p>A leaf node in a CSG tree that has a shape (a <a class="xref" href="RealtimeCSG.Foundation.BrushMesh.html">BrushMesh</a>) with which CSG operations can be performed.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+
+  
+  
+  
+  
+  <h5 id="RealtimeCSG_Foundation_CSGTreeBrush_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct CSGTreeBrush</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 id="RealtimeCSG_Foundation_CSGTreeBrush_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p><div class="NOTE"><h5>note</h5><p>This struct is a reference to node that exists on the native side, therefore its internal ID is not persistent.</p></div>
+<div class="NOTE"><h5>note</h5><p>This struct can be converted into a <a class="xref" href="RealtimeCSG.Foundation.CSGTreeNode.html">CSGTreeNode</a> and back again.</p></div>
+<div class="NOTE"><h5>note</h5><p>Be careful when keeping track of <a class="xref" href="RealtimeCSG.Foundation.CSGTreeBrush.html">CSGTreeBrush</a>s because <a class="xref" href="RealtimeCSG.Foundation.BrushMeshInstance.html#RealtimeCSG_Foundation_BrushMeshInstance_BrushMeshID">BrushMeshID</a>s can be recycled after being Destroyed.</p></div>
+See the <a href="../documentation/CSGTrees.html">CSG Trees</a> and <a href="../documentation/brushMesh.html">Brush Meshes</a> articles for more information.</p>
+</div>
+  
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="RealtimeCSG_Foundation_CSGTreeBrush_Bounds_" data-uid="RealtimeCSG.Foundation.CSGTreeBrush.Bounds*"></a>
+  
+  <h4 id="RealtimeCSG_Foundation_CSGTreeBrush_Bounds" data-uid="RealtimeCSG.Foundation.CSGTreeBrush.Bounds"><a href="#collapsible-RealtimeCSG_Foundation_CSGTreeBrush_Bounds" class="expander" data-toggle="collapse">Bounds</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Foundation_CSGTreeBrush_Bounds" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Bounds Bounds { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Bounds</span>
+        <p><p>Gets the bounds of this <a class="xref" href="RealtimeCSG.Foundation.CSGTreeBrush.html">CSGTreeBrush</a>.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="RealtimeCSG_Foundation_CSGTreeBrush_BrushMesh_" data-uid="RealtimeCSG.Foundation.CSGTreeBrush.BrushMesh*"></a>
+  
+  <h4 id="RealtimeCSG_Foundation_CSGTreeBrush_BrushMesh" data-uid="RealtimeCSG.Foundation.CSGTreeBrush.BrushMesh"><a href="#collapsible-RealtimeCSG_Foundation_CSGTreeBrush_BrushMesh" class="expander" data-toggle="collapse">BrushMesh</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Foundation_CSGTreeBrush_BrushMesh" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BrushMeshInstance BrushMesh { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="RealtimeCSG.Foundation.BrushMeshInstance.html">BrushMeshInstance</a>
+        <p><p>Sets or gets a <a class="xref" href="RealtimeCSG.Foundation.BrushMeshInstance.html">BrushMeshInstance</a></p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  <h5 id="RealtimeCSG_Foundation_CSGTreeBrush_BrushMesh_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>By modifying the <a class="xref" href="RealtimeCSG.Foundation.BrushMeshInstance.html">BrushMeshInstance</a> you can change the shape of the <a class="xref" href="RealtimeCSG.Foundation.CSGTreeBrush.html">CSGTreeBrush</a>
+<div class="NOTE"><h5>note</h5><p><a class="xref" href="RealtimeCSG.Foundation.BrushMeshInstance.html">BrushMeshInstance</a>s can be shared between <a class="xref" href="RealtimeCSG.Foundation.CSGTreeBrush.html">CSGTreeBrush</a>es.</p></div></p>
+</div>
+  
+  
+  
+  <h5 id="RealtimeCSG_Foundation_CSGTreeBrush_BrushMesh_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="RealtimeCSG.Foundation.BrushMesh.html">BrushMesh</a></div>
+  </div>
+  </div>
+  
+  
+  <a id="RealtimeCSG_Foundation_CSGTreeBrush_Dirty_" data-uid="RealtimeCSG.Foundation.CSGTreeBrush.Dirty*"></a>
+  
+  <h4 id="RealtimeCSG_Foundation_CSGTreeBrush_Dirty" data-uid="RealtimeCSG.Foundation.CSGTreeBrush.Dirty"><a href="#collapsible-RealtimeCSG_Foundation_CSGTreeBrush_Dirty" class="expander" data-toggle="collapse">Dirty</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Foundation_CSGTreeBrush_Dirty" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Dirty { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>
+        <p><p>Returns the dirty flag of the <a class="xref" href="RealtimeCSG.Foundation.CSGTreeBrush.html">CSGTreeBrush</a>. When the it&apos;s dirty, then it means (some of) its generated meshes have been modified.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="RealtimeCSG_Foundation_CSGTreeBrush_Flags_" data-uid="RealtimeCSG.Foundation.CSGTreeBrush.Flags*"></a>
+  
+  <h4 id="RealtimeCSG_Foundation_CSGTreeBrush_Flags" data-uid="RealtimeCSG.Foundation.CSGTreeBrush.Flags"><a href="#collapsible-RealtimeCSG_Foundation_CSGTreeBrush_Flags" class="expander" data-toggle="collapse">Flags</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Foundation_CSGTreeBrush_Flags" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CSGTreeBrushFlags Flags { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="RealtimeCSG.Foundation.CSGTreeBrushFlags.html">CSGTreeBrushFlags</a>
+        <p><p>Gets or sets <a class="xref" href="RealtimeCSG.Foundation.CSGTreeBrush.html">CSGTreeBrush</a> specific flags.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="RealtimeCSG_Foundation_CSGTreeBrush_LocalTransformation_" data-uid="RealtimeCSG.Foundation.CSGTreeBrush.LocalTransformation*"></a>
+  
+  <h4 id="RealtimeCSG_Foundation_CSGTreeBrush_LocalTransformation" data-uid="RealtimeCSG.Foundation.CSGTreeBrush.LocalTransformation"><a href="#collapsible-RealtimeCSG_Foundation_CSGTreeBrush_LocalTransformation" class="expander" data-toggle="collapse">LocalTransformation</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Foundation_CSGTreeBrush_LocalTransformation" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix4x4 LocalTransformation { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Matrix4x4</span>
+        <p><p>Gets or sets the transformation of the brush relative to the tree root.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="RealtimeCSG_Foundation_CSGTreeBrush_NodeID_" data-uid="RealtimeCSG.Foundation.CSGTreeBrush.NodeID*"></a>
+  
+  <h4 id="RealtimeCSG_Foundation_CSGTreeBrush_NodeID" data-uid="RealtimeCSG.Foundation.CSGTreeBrush.NodeID"><a href="#collapsible-RealtimeCSG_Foundation_CSGTreeBrush_NodeID" class="expander" data-toggle="collapse">NodeID</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Foundation_CSGTreeBrush_NodeID" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int NodeID { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>
+        <p><p>Gets the <a class="xref" href="RealtimeCSG.Foundation.CSGTreeBrush.html#RealtimeCSG_Foundation_CSGTreeBrush_NodeID">NodeID</a> of the <a class="xref" href="RealtimeCSG.Foundation.CSGTreeBrush.html">CSGTreeBrush</a>, which is a unique ID of this node.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  <h5 id="RealtimeCSG_Foundation_CSGTreeBrush_NodeID_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><div class="NOTE"><h5>note</h5><p>NodeIDs are eventually recycled, so be careful holding on to Nodes that have been destroyed.</p></div></div>
+  
+  
+  
+  </div>
+  
+  
+  <a id="RealtimeCSG_Foundation_CSGTreeBrush_Operation_" data-uid="RealtimeCSG.Foundation.CSGTreeBrush.Operation*"></a>
+  
+  <h4 id="RealtimeCSG_Foundation_CSGTreeBrush_Operation" data-uid="RealtimeCSG.Foundation.CSGTreeBrush.Operation"><a href="#collapsible-RealtimeCSG_Foundation_CSGTreeBrush_Operation" class="expander" data-toggle="collapse">Operation</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Foundation_CSGTreeBrush_Operation" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CSGOperationType Operation { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="RealtimeCSG.Foundation.CSGOperationType.html">CSGOperationType</a>
+        <p><p>The CSG operation that this <a class="xref" href="RealtimeCSG.Foundation.CSGTreeBrush.html">CSGTreeBrush</a> will use.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="RealtimeCSG_Foundation_CSGTreeBrush_Parent_" data-uid="RealtimeCSG.Foundation.CSGTreeBrush.Parent*"></a>
+  
+  <h4 id="RealtimeCSG_Foundation_CSGTreeBrush_Parent" data-uid="RealtimeCSG.Foundation.CSGTreeBrush.Parent"><a href="#collapsible-RealtimeCSG_Foundation_CSGTreeBrush_Parent" class="expander" data-toggle="collapse">Parent</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Foundation_CSGTreeBrush_Parent" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CSGTreeBranch Parent { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="RealtimeCSG.Foundation.CSGTreeBranch.html">CSGTreeBranch</a>
+        <p><p>Returns the parent <a class="xref" href="RealtimeCSG.Foundation.CSGTreeBranch.html">CSGTreeBranch</a> this <a class="xref" href="RealtimeCSG.Foundation.CSGTreeBrush.html">CSGTreeBrush</a> is a child of. Returns an invalid node if it&apos;s not a child of any <a class="xref" href="RealtimeCSG.Foundation.CSGTreeBranch.html">CSGTreeBranch</a>.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="RealtimeCSG_Foundation_CSGTreeBrush_Tree_" data-uid="RealtimeCSG.Foundation.CSGTreeBrush.Tree*"></a>
+  
+  <h4 id="RealtimeCSG_Foundation_CSGTreeBrush_Tree" data-uid="RealtimeCSG.Foundation.CSGTreeBrush.Tree"><a href="#collapsible-RealtimeCSG_Foundation_CSGTreeBrush_Tree" class="expander" data-toggle="collapse">Tree</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Foundation_CSGTreeBrush_Tree" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CSGTree Tree { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="RealtimeCSG.Foundation.CSGTree.html">CSGTree</a>
+        <p><p>Returns tree this <a class="xref" href="RealtimeCSG.Foundation.CSGTreeBrush.html">CSGTreeBrush</a> belongs to.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="RealtimeCSG_Foundation_CSGTreeBrush_UserID_" data-uid="RealtimeCSG.Foundation.CSGTreeBrush.UserID*"></a>
+  
+  <h4 id="RealtimeCSG_Foundation_CSGTreeBrush_UserID" data-uid="RealtimeCSG.Foundation.CSGTreeBrush.UserID"><a href="#collapsible-RealtimeCSG_Foundation_CSGTreeBrush_UserID" class="expander" data-toggle="collapse">UserID</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Foundation_CSGTreeBrush_UserID" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int UserID { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>
+        <p><p>Gets the <a class="xref" href="RealtimeCSG.Foundation.CSGTreeBrush.html#RealtimeCSG_Foundation_CSGTreeBrush_UserID">UserID</a> set to the <a class="xref" href="RealtimeCSG.Foundation.CSGTreeBrush.html">CSGTreeBrush</a> at creation time.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="RealtimeCSG_Foundation_CSGTreeBrush_Valid_" data-uid="RealtimeCSG.Foundation.CSGTreeBrush.Valid*"></a>
+  
+  <h4 id="RealtimeCSG_Foundation_CSGTreeBrush_Valid" data-uid="RealtimeCSG.Foundation.CSGTreeBrush.Valid"><a href="#collapsible-RealtimeCSG_Foundation_CSGTreeBrush_Valid" class="expander" data-toggle="collapse">Valid</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Foundation_CSGTreeBrush_Valid" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Valid { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>
+        <p><p>Returns if the current <a class="xref" href="RealtimeCSG.Foundation.CSGTreeBrush.html">CSGTreeBrush</a> is valid or not.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  <h5 id="RealtimeCSG_Foundation_CSGTreeBrush_Valid_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><div class="NOTE"><h5>note</h5><p>If <code data-dev-comment-type="paramref" class="paramref">Valid</code> is <strong>false</strong> that could mean that this node has been destroyed.</p></div></div>
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="RealtimeCSG_Foundation_CSGTreeBrush_Create_" data-uid="RealtimeCSG.Foundation.CSGTreeBrush.Create*"></a>
+  
+  <h4 id="RealtimeCSG_Foundation_CSGTreeBrush_Create_Matrix4x4_RealtimeCSG_Foundation_BrushMeshInstance_RealtimeCSG_Foundation_CSGOperationType_RealtimeCSG_Foundation_CSGTreeBrushFlags_" data-uid="RealtimeCSG.Foundation.CSGTreeBrush.Create(Matrix4x4,RealtimeCSG.Foundation.BrushMeshInstance,RealtimeCSG.Foundation.CSGOperationType,RealtimeCSG.Foundation.CSGTreeBrushFlags)"><a href="#collapsible-RealtimeCSG_Foundation_CSGTreeBrush_Create_Matrix4x4_RealtimeCSG_Foundation_BrushMeshInstance_RealtimeCSG_Foundation_CSGOperationType_RealtimeCSG_Foundation_CSGTreeBrushFlags_" class="expander" data-toggle="collapse">Create(Matrix4x4, BrushMeshInstance, CSGOperationType, CSGTreeBrushFlags)</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Foundation_CSGTreeBrush_Create_Matrix4x4_RealtimeCSG_Foundation_BrushMeshInstance_RealtimeCSG_Foundation_CSGOperationType_RealtimeCSG_Foundation_CSGTreeBrushFlags_" class="collapse in">
+  <div class="markdown level1 summary"><p>Generates a brush on the native side and returns a <a class="xref" href="RealtimeCSG.Foundation.CSGTreeBrush.html">CSGTreeBrush</a> struct that contains a reference to it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CSGTreeBrush Create(Matrix4x4 localTransformation, BrushMeshInstance brushMesh = default (BrushMeshInstance), CSGOperationType operation = CSGOperationType.Additive, CSGTreeBrushFlags flags = CSGTreeBrushFlags.Default)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Matrix4x4</span></span>
+        <span class="parametername">localTransformation</span>
+        <p><p>The transformation of the brush relative to the tree root</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="RealtimeCSG.Foundation.BrushMeshInstance.html">BrushMeshInstance</a></span>
+        <span class="parametername">brushMesh</span>
+        <p><p>A <a class="xref" href="RealtimeCSG.Foundation.BrushMeshInstance.html">BrushMeshInstance</a>, which is a reference to a <a class="xref" href="RealtimeCSG.Foundation.BrushMesh.html">BrushMesh</a>.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="RealtimeCSG.Foundation.CSGOperationType.html">CSGOperationType</a></span>
+        <span class="parametername">operation</span>
+        <p><p>The <a class="xref" href="RealtimeCSG.Foundation.CSGOperationType.html">CSGOperationType</a> that needs to be performed with this <a class="xref" href="RealtimeCSG.Foundation.CSGTreeBrush.html">CSGTreeBrush</a>.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="RealtimeCSG.Foundation.CSGTreeBrushFlags.html">CSGTreeBrushFlags</a></span>
+        <span class="parametername">flags</span>
+        <p><p><a class="xref" href="RealtimeCSG.Foundation.CSGTreeBrush.html">CSGTreeBrush</a> specific flags</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="RealtimeCSG.Foundation.CSGTreeBrush.html">CSGTreeBrush</a>
+        <p><p>A new <a class="xref" href="RealtimeCSG.Foundation.CSGTreeBrush.html">CSGTreeBrush</a>. May be an invalid node if it failed to create it.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="RealtimeCSG_Foundation_CSGTreeBrush_Create_" data-uid="RealtimeCSG.Foundation.CSGTreeBrush.Create*"></a>
+  
+  <h4 id="RealtimeCSG_Foundation_CSGTreeBrush_Create_System_Int32_Matrix4x4_RealtimeCSG_Foundation_BrushMeshInstance_RealtimeCSG_Foundation_CSGOperationType_RealtimeCSG_Foundation_CSGTreeBrushFlags_" data-uid="RealtimeCSG.Foundation.CSGTreeBrush.Create(System.Int32,Matrix4x4,RealtimeCSG.Foundation.BrushMeshInstance,RealtimeCSG.Foundation.CSGOperationType,RealtimeCSG.Foundation.CSGTreeBrushFlags)"><a href="#collapsible-RealtimeCSG_Foundation_CSGTreeBrush_Create_System_Int32_Matrix4x4_RealtimeCSG_Foundation_BrushMeshInstance_RealtimeCSG_Foundation_CSGOperationType_RealtimeCSG_Foundation_CSGTreeBrushFlags_" class="expander" data-toggle="collapse">Create(Int32, Matrix4x4, BrushMeshInstance, CSGOperationType, CSGTreeBrushFlags)</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Foundation_CSGTreeBrush_Create_System_Int32_Matrix4x4_RealtimeCSG_Foundation_BrushMeshInstance_RealtimeCSG_Foundation_CSGOperationType_RealtimeCSG_Foundation_CSGTreeBrushFlags_" class="collapse in">
+  <div class="markdown level1 summary"><p>Generates a brush on the native side and returns a <a class="xref" href="RealtimeCSG.Foundation.CSGTreeBrush.html">CSGTreeBrush</a> struct that contains a reference to it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CSGTreeBrush Create(int userID, Matrix4x4 localTransformation, BrushMeshInstance brushMesh = default (BrushMeshInstance), CSGOperationType operation = CSGOperationType.Additive, CSGTreeBrushFlags flags = CSGTreeBrushFlags.Default)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></span>
+        <span class="parametername">userID</span>
+        <p><p>A unique id to help identify this particular brush. For instance, this could be an InstanceID to a <a href="https://docs.unity3d.com/ScriptReference/Object.html">UnityEngine.Object</a></p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Matrix4x4</span></span>
+        <span class="parametername">localTransformation</span>
+        <p><p>The transformation of the brush relative to the tree root</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="RealtimeCSG.Foundation.BrushMeshInstance.html">BrushMeshInstance</a></span>
+        <span class="parametername">brushMesh</span>
+        <p><p>A <a class="xref" href="RealtimeCSG.Foundation.BrushMeshInstance.html">BrushMeshInstance</a>, which is a reference to a <a class="xref" href="RealtimeCSG.Foundation.BrushMesh.html">BrushMesh</a>.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="RealtimeCSG.Foundation.CSGOperationType.html">CSGOperationType</a></span>
+        <span class="parametername">operation</span>
+        <p><p>The <a class="xref" href="RealtimeCSG.Foundation.CSGOperationType.html">CSGOperationType</a> that needs to be performed with this <a class="xref" href="RealtimeCSG.Foundation.CSGTreeBrush.html">CSGTreeBrush</a>.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="RealtimeCSG.Foundation.CSGTreeBrushFlags.html">CSGTreeBrushFlags</a></span>
+        <span class="parametername">flags</span>
+        <p><p><a class="xref" href="RealtimeCSG.Foundation.CSGTreeBrush.html">CSGTreeBrush</a> specific flags</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="RealtimeCSG.Foundation.CSGTreeBrush.html">CSGTreeBrush</a>
+        <p><p>A new <a class="xref" href="RealtimeCSG.Foundation.CSGTreeBrush.html">CSGTreeBrush</a>. May be an invalid node if it failed to create it.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="RealtimeCSG_Foundation_CSGTreeBrush_Create_" data-uid="RealtimeCSG.Foundation.CSGTreeBrush.Create*"></a>
+  
+  <h4 id="RealtimeCSG_Foundation_CSGTreeBrush_Create_System_Int32_RealtimeCSG_Foundation_BrushMeshInstance_RealtimeCSG_Foundation_CSGOperationType_RealtimeCSG_Foundation_CSGTreeBrushFlags_" data-uid="RealtimeCSG.Foundation.CSGTreeBrush.Create(System.Int32,RealtimeCSG.Foundation.BrushMeshInstance,RealtimeCSG.Foundation.CSGOperationType,RealtimeCSG.Foundation.CSGTreeBrushFlags)"><a href="#collapsible-RealtimeCSG_Foundation_CSGTreeBrush_Create_System_Int32_RealtimeCSG_Foundation_BrushMeshInstance_RealtimeCSG_Foundation_CSGOperationType_RealtimeCSG_Foundation_CSGTreeBrushFlags_" class="expander" data-toggle="collapse">Create(Int32, BrushMeshInstance, CSGOperationType, CSGTreeBrushFlags)</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Foundation_CSGTreeBrush_Create_System_Int32_RealtimeCSG_Foundation_BrushMeshInstance_RealtimeCSG_Foundation_CSGOperationType_RealtimeCSG_Foundation_CSGTreeBrushFlags_" class="collapse in">
+  <div class="markdown level1 summary"><p>Generates a brush on the native side and returns a <a class="xref" href="RealtimeCSG.Foundation.CSGTreeBrush.html">CSGTreeBrush</a> struct that contains a reference to it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CSGTreeBrush Create(int userID = 0, BrushMeshInstance brushMesh = default (BrushMeshInstance), CSGOperationType operation = CSGOperationType.Additive, CSGTreeBrushFlags flags = CSGTreeBrushFlags.Default)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></span>
+        <span class="parametername">userID</span>
+        <p><p>A unique id to help identify this particular brush. For instance, this could be an InstanceID to a <a href="https://docs.unity3d.com/ScriptReference/Object.html">UnityEngine.Object</a></p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="RealtimeCSG.Foundation.BrushMeshInstance.html">BrushMeshInstance</a></span>
+        <span class="parametername">brushMesh</span>
+        <p><p>A <a class="xref" href="RealtimeCSG.Foundation.BrushMeshInstance.html">BrushMeshInstance</a>, which is a reference to a <a class="xref" href="RealtimeCSG.Foundation.BrushMesh.html">BrushMesh</a>.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="RealtimeCSG.Foundation.CSGOperationType.html">CSGOperationType</a></span>
+        <span class="parametername">operation</span>
+        <p><p>The <a class="xref" href="RealtimeCSG.Foundation.CSGOperationType.html">CSGOperationType</a> that needs to be performed with this <a class="xref" href="RealtimeCSG.Foundation.CSGTreeBrush.html">CSGTreeBrush</a>.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="RealtimeCSG.Foundation.CSGTreeBrushFlags.html">CSGTreeBrushFlags</a></span>
+        <span class="parametername">flags</span>
+        <p><p><a class="xref" href="RealtimeCSG.Foundation.CSGTreeBrush.html">CSGTreeBrush</a> specific flags</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="RealtimeCSG.Foundation.CSGTreeBrush.html">CSGTreeBrush</a>
+        <p><p>A new <a class="xref" href="RealtimeCSG.Foundation.CSGTreeBrush.html">CSGTreeBrush</a>. May be an invalid node if it failed to create it.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="RealtimeCSG_Foundation_CSGTreeBrush_Destroy_" data-uid="RealtimeCSG.Foundation.CSGTreeBrush.Destroy*"></a>
+  
+  <h4 id="RealtimeCSG_Foundation_CSGTreeBrush_Destroy" data-uid="RealtimeCSG.Foundation.CSGTreeBrush.Destroy"><a href="#collapsible-RealtimeCSG_Foundation_CSGTreeBrush_Destroy" class="expander" data-toggle="collapse">Destroy()</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Foundation_CSGTreeBrush_Destroy" class="collapse in">
+  <div class="markdown level1 summary"><p>Destroy this <a class="xref" href="RealtimeCSG.Foundation.CSGTreeBrush.html">CSGTreeBrush</a>. Sets the state to invalid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Destroy()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>
+        <p><p><strong>true</strong> on success, <strong>false</strong> on failure</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="RealtimeCSG_Foundation_CSGTreeBrush_SetDirty_" data-uid="RealtimeCSG.Foundation.CSGTreeBrush.SetDirty*"></a>
+  
+  <h4 id="RealtimeCSG_Foundation_CSGTreeBrush_SetDirty" data-uid="RealtimeCSG.Foundation.CSGTreeBrush.SetDirty"><a href="#collapsible-RealtimeCSG_Foundation_CSGTreeBrush_SetDirty" class="expander" data-toggle="collapse">SetDirty()</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Foundation_CSGTreeBrush_SetDirty" class="collapse in">
+  <div class="markdown level1 summary"><p>Force set the dirty flag of the <a class="xref" href="RealtimeCSG.Foundation.CSGTreeBrush.html">CSGTreeBrush</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDirty()</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="RealtimeCSG.Foundation.CSGTreeNode.html">CSGTreeNode</a></div>
+      <div><a class="xref" href="RealtimeCSG.Foundation.CSGTree.html">CSGTree</a></div>
+      <div><a class="xref" href="RealtimeCSG.Foundation.CSGTreeBranch.html">CSGTreeBranch</a></div>
+      <div><a class="xref" href="RealtimeCSG.Foundation.BrushMesh.html">BrushMesh</a></div>
+      <div><a class="xref" href="RealtimeCSG.Foundation.BrushMeshInstance.html">BrushMeshInstance</a></div>
+  </div>
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright &copy; 2018 Prenominal B.V.
+            
+          </div>
+        </div>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

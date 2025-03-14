@@ -1,0 +1,449 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Struct TexGen
+   | RealtimeCSG </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Struct TexGen
+   | RealtimeCSG ">
+    <meta name="generator" content="docfx 2.31.0.0">
+  
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Oswald|Roboto+Condensed" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+  </head>  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo3_24_2padding.png" alt="RealtimeCSG">
+                <span class="logoFirst">realtime</span> <span class="logoSecond">CSG</span>
+              </a>    </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="RealtimeCSG.Legacy.TexGen">
+  <h1 id="RealtimeCSG_Legacy_TexGen" data-uid="RealtimeCSG.Legacy.TexGen">Struct TexGen
+  </h1>
+  <div class="markdown level0 summary"><p>Defines what type of surface a surface is (Renderable, Collidable etc.) and how its texture coordinates and normals are generated.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+
+  
+  
+  
+  
+  <h5 id="RealtimeCSG_Legacy_TexGen_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public struct TexGen</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 id="RealtimeCSG_Legacy_TexGen_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><div class="NOTE"><h5>note</h5><p>This code is legacy and will be removed eventually.</p></div></div>
+  
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="RealtimeCSG_Legacy_TexGen__ctor_" data-uid="RealtimeCSG.Legacy.TexGen.#ctor*"></a>
+  
+  <h4 id="RealtimeCSG_Legacy_TexGen__ctor_Material_PhysicMaterial_" data-uid="RealtimeCSG.Legacy.TexGen.#ctor(Material,PhysicMaterial)"><a href="#collapsible-RealtimeCSG_Legacy_TexGen__ctor_Material_PhysicMaterial_" class="expander" data-toggle="collapse">TexGen(Material, PhysicMaterial)</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Legacy_TexGen__ctor_Material_PhysicMaterial_" class="collapse in">
+  <div class="markdown level1 summary"><p>Constructor to generate <a class="xref" href="RealtimeCSG.Legacy.TexGen.html">TexGen</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TexGen(Material renderMaterial = null, PhysicMaterial physicsMaterial = null)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Material</span></span>
+        <span class="parametername">renderMaterial</span>
+        <p><p><a href="https://docs.unity3d.com/ScriptReference/Material.html">UnityEngine.Material</a> to use with this <a class="xref" href="RealtimeCSG.Legacy.TexGen.html">TexGen</a></p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">PhysicMaterial</span></span>
+        <span class="parametername">physicsMaterial</span>
+        <p><p><a href="https://docs.unity3d.com/ScriptReference/PhysicMaterial.html">UnityEngine.PhysicMaterial</a> to use with this <a class="xref" href="RealtimeCSG.Legacy.TexGen.html">TexGen</a></p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  
+  <h4 id="RealtimeCSG_Legacy_TexGen_PhysicsMaterial" data-uid="RealtimeCSG.Legacy.TexGen.PhysicsMaterial"><a href="#collapsible-RealtimeCSG_Legacy_TexGen_PhysicsMaterial" class="expander" data-toggle="collapse">PhysicsMaterial</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Legacy_TexGen_PhysicsMaterial" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PhysicMaterial PhysicsMaterial</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">PhysicMaterial</span>
+        <p><p><a href="https://docs.unity3d.com/ScriptReference/PhysicMaterial.html">UnityEngine.PhysicMaterial</a> that is used by the polygons associated with this <a class="xref" href="RealtimeCSG.Legacy.TexGen.html">TexGen</a> to generate <a href="https://docs.unity3d.com/ScriptReference/Collider.html">UnityEngine.Collider</a> with</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="RealtimeCSG_Legacy_TexGen_RenderMaterial" data-uid="RealtimeCSG.Legacy.TexGen.RenderMaterial"><a href="#collapsible-RealtimeCSG_Legacy_TexGen_RenderMaterial" class="expander" data-toggle="collapse">RenderMaterial</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Legacy_TexGen_RenderMaterial" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Material RenderMaterial</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Material</span>
+        <p><p><a href="https://docs.unity3d.com/ScriptReference/Material.html">UnityEngine.Material</a> that is used by the polygons associated with this <a class="xref" href="RealtimeCSG.Legacy.TexGen.html">TexGen</a> to generate <a href="https://docs.unity3d.com/ScriptReference/MeshRenderer.html">UnityEngine.MeshRenderer</a> with</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="RealtimeCSG_Legacy_TexGen_RotationAngle" data-uid="RealtimeCSG.Legacy.TexGen.RotationAngle"><a href="#collapsible-RealtimeCSG_Legacy_TexGen_RotationAngle" class="expander" data-toggle="collapse">RotationAngle</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Legacy_TexGen_RotationAngle" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float RotationAngle</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>
+        <p><p>UV rotation relative to translated plane origin</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="RealtimeCSG_Legacy_TexGen_Scale" data-uid="RealtimeCSG.Legacy.TexGen.Scale"><a href="#collapsible-RealtimeCSG_Legacy_TexGen_Scale" class="expander" data-toggle="collapse">Scale</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Legacy_TexGen_Scale" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 Scale</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Vector2</span>
+        <p><p>UV scale relative to translated plane origin</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="RealtimeCSG_Legacy_TexGen_SmoothingGroup" data-uid="RealtimeCSG.Legacy.TexGen.SmoothingGroup"><a href="#collapsible-RealtimeCSG_Legacy_TexGen_SmoothingGroup" class="expander" data-toggle="collapse">SmoothingGroup</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Legacy_TexGen_SmoothingGroup" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint SmoothingGroup</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a>
+        <p><p><a class="xref" href="RealtimeCSG.Legacy.TexGen.html#RealtimeCSG_Legacy_TexGen_SmoothingGroup">SmoothingGroup</a> used to smooth normals together</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  <h5 id="RealtimeCSG_Legacy_TexGen_SmoothingGroup_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>All normals around a vertex are averaged for all surfaces that have the same <a class="xref" href="RealtimeCSG.Legacy.TexGen.html#RealtimeCSG_Legacy_TexGen_SmoothingGroup">SmoothingGroup</a>. When <a class="xref" href="RealtimeCSG.Legacy.TexGen.html#RealtimeCSG_Legacy_TexGen_SmoothingGroup">SmoothingGroup</a> is 0 no smoothing is applied.</p>
+</div>
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="RealtimeCSG_Legacy_TexGen_Translation" data-uid="RealtimeCSG.Legacy.TexGen.Translation"><a href="#collapsible-RealtimeCSG_Legacy_TexGen_Translation" class="expander" data-toggle="collapse">Translation</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Legacy_TexGen_Translation" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 Translation</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Vector2</span>
+        <p><p>UV translation relative to plane origin</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="RealtimeCSG_Legacy_TexGen_GeneratePlaneSpaceToTextureSpaceMatrix_" data-uid="RealtimeCSG.Legacy.TexGen.GeneratePlaneSpaceToTextureSpaceMatrix*"></a>
+  
+  <h4 id="RealtimeCSG_Legacy_TexGen_GeneratePlaneSpaceToTextureSpaceMatrix" data-uid="RealtimeCSG.Legacy.TexGen.GeneratePlaneSpaceToTextureSpaceMatrix"><a href="#collapsible-RealtimeCSG_Legacy_TexGen_GeneratePlaneSpaceToTextureSpaceMatrix" class="expander" data-toggle="collapse">GeneratePlaneSpaceToTextureSpaceMatrix()</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Legacy_TexGen_GeneratePlaneSpaceToTextureSpaceMatrix" class="collapse in">
+  <div class="markdown level1 summary"><p>Generates a matrix that converts a coordinate in plane-space to uv-space</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix4x4 GeneratePlaneSpaceToTextureSpaceMatrix()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Matrix4x4</span>
+        <p><p>A plane space to uv space matrix</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="RealtimeCSG.Legacy.Shape.html">Shape</a></div>
+      <div><a class="xref" href="RealtimeCSG.Legacy.ControlMesh.html">ControlMesh</a></div>
+      <div><a class="xref" href="RealtimeCSG.Legacy.Polygon.html">Polygon</a></div>
+      <div><a class="xref" href="RealtimeCSG.Legacy.TexGenFlags.html">TexGenFlags</a></div>
+  </div>
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright &copy; 2018 Prenominal B.V.
+            
+          </div>
+        </div>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

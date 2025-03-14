@@ -1,0 +1,1263 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Struct CSGTree
+   | RealtimeCSG </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Struct CSGTree
+   | RealtimeCSG ">
+    <meta name="generator" content="docfx 2.31.0.0">
+  
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Oswald|Roboto+Condensed" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+  </head>  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo3_24_2padding.png" alt="RealtimeCSG">
+                <span class="logoFirst">realtime</span> <span class="logoSecond">CSG</span>
+              </a>    </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="RealtimeCSG.Foundation.CSGTree">
+  <h1 id="RealtimeCSG_Foundation_CSGTree" data-uid="RealtimeCSG.Foundation.CSGTree">Struct CSGTree
+  </h1>
+  <div class="markdown level0 summary"><p>The root of a CSG tree which is used to generate meshes with. All other types of nodes are children of this node.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+
+  
+  
+  
+  
+  <h5 id="RealtimeCSG_Foundation_CSGTree_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct CSGTree</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 id="RealtimeCSG_Foundation_CSGTree_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p><div class="NOTE"><h5>note</h5><p>This struct is a reference to node that exists on the native side, therefore its internal ID is not persistent.</p></div>
+<div class="NOTE"><h5>note</h5><p>This struct can be converted into a <a class="xref" href="RealtimeCSG.Foundation.CSGTreeNode.html">CSGTreeNode</a> and back again.</p></div>
+<div class="NOTE"><h5>note</h5><p>Be careful when keeping track of <a class="xref" href="RealtimeCSG.Foundation.CSGTree.html">CSGTree</a>s because <a class="xref" href="RealtimeCSG.Foundation.BrushMeshInstance.html#RealtimeCSG_Foundation_BrushMeshInstance_BrushMeshID">BrushMeshID</a>s can be recycled after being Destroyed.</p></div>
+See the <a href="../documentation/CSGTrees.html">CSG Trees</a> and <a href="../documentation/createUnityMesh.html">Create Unity Meshes</a> documentation for more information.</p>
+</div>
+  
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="RealtimeCSG_Foundation_CSGTree_Count_" data-uid="RealtimeCSG.Foundation.CSGTree.Count*"></a>
+  
+  <h4 id="RealtimeCSG_Foundation_CSGTree_Count" data-uid="RealtimeCSG.Foundation.CSGTree.Count"><a href="#collapsible-RealtimeCSG_Foundation_CSGTree_Count" class="expander" data-toggle="collapse">Count</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Foundation_CSGTree_Count" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>
+        <p><p>Gets the number of elements contained in the <a class="xref" href="RealtimeCSG.Foundation.CSGTree.html">CSGTree</a>.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="RealtimeCSG_Foundation_CSGTree_Dirty_" data-uid="RealtimeCSG.Foundation.CSGTree.Dirty*"></a>
+  
+  <h4 id="RealtimeCSG_Foundation_CSGTree_Dirty" data-uid="RealtimeCSG.Foundation.CSGTree.Dirty"><a href="#collapsible-RealtimeCSG_Foundation_CSGTree_Dirty" class="expander" data-toggle="collapse">Dirty</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Foundation_CSGTree_Dirty" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Dirty { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>
+        <p><p>Returns the dirty flag of the <a class="xref" href="RealtimeCSG.Foundation.CSGTree.html">CSGTree</a>. When the it&apos;s dirty, then it means (some of) its generated meshes have been modified.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="RealtimeCSG_Foundation_CSGTree_Item_" data-uid="RealtimeCSG.Foundation.CSGTree.Item*"></a>
+  
+  <h4 id="RealtimeCSG_Foundation_CSGTree_Item_System_Int32_" data-uid="RealtimeCSG.Foundation.CSGTree.Item(System.Int32)"><a href="#collapsible-RealtimeCSG_Foundation_CSGTree_Item_System_Int32_" class="expander" data-toggle="collapse">Item[Int32]</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Foundation_CSGTree_Item_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets child at the specified index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CSGTreeNode this[int index] { get; }</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></span>
+        <span class="parametername">index</span>
+        <p><p>The zero-based index of the child to get.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="RealtimeCSG.Foundation.CSGTreeNode.html">CSGTreeNode</a>
+        <p><p>The element at the specified index.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="RealtimeCSG_Foundation_CSGTree_NodeID_" data-uid="RealtimeCSG.Foundation.CSGTree.NodeID*"></a>
+  
+  <h4 id="RealtimeCSG_Foundation_CSGTree_NodeID" data-uid="RealtimeCSG.Foundation.CSGTree.NodeID"><a href="#collapsible-RealtimeCSG_Foundation_CSGTree_NodeID" class="expander" data-toggle="collapse">NodeID</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Foundation_CSGTree_NodeID" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int NodeID { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>
+        <p><p>Gets the <a class="xref" href="RealtimeCSG.Foundation.CSGTree.html#RealtimeCSG_Foundation_CSGTree_NodeID">NodeID</a> of the <a class="xref" href="RealtimeCSG.Foundation.CSGTree.html">CSGTree</a>, which is a unique ID of this node.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  <h5 id="RealtimeCSG_Foundation_CSGTree_NodeID_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><div class="NOTE"><h5>note</h5><p>NodeIDs are eventually recycled, so be careful holding on to Nodes that have been destroyed.</p></div></div>
+  
+  
+  
+  </div>
+  
+  
+  <a id="RealtimeCSG_Foundation_CSGTree_UserID_" data-uid="RealtimeCSG.Foundation.CSGTree.UserID*"></a>
+  
+  <h4 id="RealtimeCSG_Foundation_CSGTree_UserID" data-uid="RealtimeCSG.Foundation.CSGTree.UserID"><a href="#collapsible-RealtimeCSG_Foundation_CSGTree_UserID" class="expander" data-toggle="collapse">UserID</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Foundation_CSGTree_UserID" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int UserID { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>
+        <p><p>Gets the <a class="xref" href="RealtimeCSG.Foundation.CSGTree.html#RealtimeCSG_Foundation_CSGTree_UserID">UserID</a> set to the <a class="xref" href="RealtimeCSG.Foundation.CSGTree.html">CSGTree</a> at creation time.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="RealtimeCSG_Foundation_CSGTree_Valid_" data-uid="RealtimeCSG.Foundation.CSGTree.Valid*"></a>
+  
+  <h4 id="RealtimeCSG_Foundation_CSGTree_Valid" data-uid="RealtimeCSG.Foundation.CSGTree.Valid"><a href="#collapsible-RealtimeCSG_Foundation_CSGTree_Valid" class="expander" data-toggle="collapse">Valid</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Foundation_CSGTree_Valid" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Valid { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>
+        <p><p>Returns if the current <a class="xref" href="RealtimeCSG.Foundation.CSGTree.html">CSGTree</a> is valid or not.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  <h5 id="RealtimeCSG_Foundation_CSGTree_Valid_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><div class="NOTE"><h5>note</h5><p>If <code data-dev-comment-type="paramref" class="paramref">Valid</code> is <strong>false</strong> that could mean that this node has been destroyed.</p></div></div>
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="RealtimeCSG_Foundation_CSGTree_Add_" data-uid="RealtimeCSG.Foundation.CSGTree.Add*"></a>
+  
+  <h4 id="RealtimeCSG_Foundation_CSGTree_Add_RealtimeCSG_Foundation_CSGTreeNode_" data-uid="RealtimeCSG.Foundation.CSGTree.Add(RealtimeCSG.Foundation.CSGTreeNode)"><a href="#collapsible-RealtimeCSG_Foundation_CSGTree_Add_RealtimeCSG_Foundation_CSGTreeNode_" class="expander" data-toggle="collapse">Add(CSGTreeNode)</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Foundation_CSGTree_Add_RealtimeCSG_Foundation_CSGTreeNode_" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds a <a class="xref" href="RealtimeCSG.Foundation.CSGTreeNode.html">CSGTreeNode</a> to the end of the <a class="xref" href="RealtimeCSG.Foundation.CSGTree.html">CSGTree</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Add(CSGTreeNode item)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="RealtimeCSG.Foundation.CSGTreeNode.html">CSGTreeNode</a></span>
+        <span class="parametername">item</span>
+        <p><p>The <a class="xref" href="RealtimeCSG.Foundation.CSGTreeNode.html">CSGTreeNode</a> to be added to the end of the <a class="xref" href="RealtimeCSG.Foundation.CSGTree.html">CSGTree</a>.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>
+        <p><p><strong>true</strong> on success, <strong>false</strong> on failure</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="RealtimeCSG_Foundation_CSGTree_AddRange_" data-uid="RealtimeCSG.Foundation.CSGTree.AddRange*"></a>
+  
+  <h4 id="RealtimeCSG_Foundation_CSGTree_AddRange_RealtimeCSG_Foundation_CSGTreeNode___" data-uid="RealtimeCSG.Foundation.CSGTree.AddRange(RealtimeCSG.Foundation.CSGTreeNode[])"><a href="#collapsible-RealtimeCSG_Foundation_CSGTree_AddRange_RealtimeCSG_Foundation_CSGTreeNode___" class="expander" data-toggle="collapse">AddRange(CSGTreeNode[])</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Foundation_CSGTree_AddRange_RealtimeCSG_Foundation_CSGTreeNode___" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds the <a class="xref" href="RealtimeCSG.Foundation.CSGTreeNode.html">CSGTreeNode</a>s of the specified array to the end of the  <a class="xref" href="RealtimeCSG.Foundation.CSGTree.html">CSGTree</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddRange(params CSGTreeNode[] array)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="RealtimeCSG.Foundation.CSGTreeNode.html">CSGTreeNode</a>[]</span>
+        <span class="parametername">array</span>
+        <p><p>The array whose <a class="xref" href="RealtimeCSG.Foundation.CSGTreeNode.html">CSGTreeNode</a>s should be added to the end of the <a class="xref" href="RealtimeCSG.Foundation.CSGTree.html">CSGTree</a>. The array itself cannot be null.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>
+        <p><p><strong>true</strong> on success, <strong>false</strong> on failure</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="RealtimeCSG_Foundation_CSGTree_ChildrenToArray_" data-uid="RealtimeCSG.Foundation.CSGTree.ChildrenToArray*"></a>
+  
+  <h4 id="RealtimeCSG_Foundation_CSGTree_ChildrenToArray" data-uid="RealtimeCSG.Foundation.CSGTree.ChildrenToArray"><a href="#collapsible-RealtimeCSG_Foundation_CSGTree_ChildrenToArray" class="expander" data-toggle="collapse">ChildrenToArray()</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Foundation_CSGTree_ChildrenToArray" class="collapse in">
+  <div class="markdown level1 summary"><p>Copies the <a class="xref" href="RealtimeCSG.Foundation.CSGTreeNode.html">CSGTreeNode</a>s of the <a class="xref" href="RealtimeCSG.Foundation.CSGTree.html">CSGTree</a> to a new array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CSGTreeNode[] ChildrenToArray()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="RealtimeCSG.Foundation.CSGTreeNode.html">CSGTreeNode</a>[]
+        <p><p>An array containing the <a class="xref" href="RealtimeCSG.Foundation.CSGTreeNode.html">CSGTreeNode</a>s of the <a class="xref" href="RealtimeCSG.Foundation.CSGTree.html">CSGTree</a>.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="RealtimeCSG_Foundation_CSGTree_Clear_" data-uid="RealtimeCSG.Foundation.CSGTree.Clear*"></a>
+  
+  <h4 id="RealtimeCSG_Foundation_CSGTree_Clear" data-uid="RealtimeCSG.Foundation.CSGTree.Clear"><a href="#collapsible-RealtimeCSG_Foundation_CSGTree_Clear" class="expander" data-toggle="collapse">Clear()</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Foundation_CSGTree_Clear" class="collapse in">
+  <div class="markdown level1 summary"><p>Removes all children from the <a class="xref" href="RealtimeCSG.Foundation.CSGTree.html">CSGTree</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="RealtimeCSG_Foundation_CSGTree_Contains_" data-uid="RealtimeCSG.Foundation.CSGTree.Contains*"></a>
+  
+  <h4 id="RealtimeCSG_Foundation_CSGTree_Contains_RealtimeCSG_Foundation_CSGTreeNode_" data-uid="RealtimeCSG.Foundation.CSGTree.Contains(RealtimeCSG.Foundation.CSGTreeNode)"><a href="#collapsible-RealtimeCSG_Foundation_CSGTree_Contains_RealtimeCSG_Foundation_CSGTreeNode_" class="expander" data-toggle="collapse">Contains(CSGTreeNode)</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Foundation_CSGTree_Contains_RealtimeCSG_Foundation_CSGTreeNode_" class="collapse in">
+  <div class="markdown level1 summary"><p>Determines whether the <a class="xref" href="RealtimeCSG.Foundation.CSGTree.html">CSGTree</a> contains a specific value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(CSGTreeNode item)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="RealtimeCSG.Foundation.CSGTreeNode.html">CSGTreeNode</a></span>
+        <span class="parametername">item</span>
+        <p><p>The Object to locate in the <a class="xref" href="RealtimeCSG.Foundation.CSGTree.html">CSGTree</a>.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>
+        <p><p><strong>true</strong> if item is found in the <a class="xref" href="RealtimeCSG.Foundation.CSGTree.html">CSGTree</a>; otherwise, <strong>false</strong>.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="RealtimeCSG_Foundation_CSGTree_CopyChildrenTo_" data-uid="RealtimeCSG.Foundation.CSGTree.CopyChildrenTo*"></a>
+  
+  <h4 id="RealtimeCSG_Foundation_CSGTree_CopyChildrenTo_RealtimeCSG_Foundation_CSGTreeNode___System_Int32_" data-uid="RealtimeCSG.Foundation.CSGTree.CopyChildrenTo(RealtimeCSG.Foundation.CSGTreeNode[],System.Int32)"><a href="#collapsible-RealtimeCSG_Foundation_CSGTree_CopyChildrenTo_RealtimeCSG_Foundation_CSGTreeNode___System_Int32_" class="expander" data-toggle="collapse">CopyChildrenTo(CSGTreeNode[], Int32)</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Foundation_CSGTree_CopyChildrenTo_RealtimeCSG_Foundation_CSGTreeNode___System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Copies the immediate children of the <a class="xref" href="RealtimeCSG.Foundation.CSGTree.html">CSGTree</a> to an Array, starting at a particular Array index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CopyChildrenTo(CSGTreeNode[] array, int arrayIndex)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="RealtimeCSG.Foundation.CSGTreeNode.html">CSGTreeNode</a>[]</span>
+        <span class="parametername">array</span>
+        <p><p>The one-dimensional Array that is the destination of the elements copied from <a class="xref" href="RealtimeCSG.Foundation.CSGTree.html">CSGTree</a>. The Array must have zero-based indexing.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></span>
+        <span class="parametername">arrayIndex</span>
+        <p><p>The zero-based index in array at which copying begins.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>
+        <p><p>The number of children copied into <code data-dev-comment-type="paramref" class="paramref">array</code>.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="RealtimeCSG_Foundation_CSGTree_Create_" data-uid="RealtimeCSG.Foundation.CSGTree.Create*"></a>
+  
+  <h4 id="RealtimeCSG_Foundation_CSGTree_Create_RealtimeCSG_Foundation_CSGTreeNode___" data-uid="RealtimeCSG.Foundation.CSGTree.Create(RealtimeCSG.Foundation.CSGTreeNode[])"><a href="#collapsible-RealtimeCSG_Foundation_CSGTree_Create_RealtimeCSG_Foundation_CSGTreeNode___" class="expander" data-toggle="collapse">Create(CSGTreeNode[])</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Foundation_CSGTree_Create_RealtimeCSG_Foundation_CSGTreeNode___" class="collapse in">
+  <div class="markdown level1 summary"><p>Generates a tree on the native side and returns a <a class="xref" href="RealtimeCSG.Foundation.CSGTree.html">CSGTree</a> struct that contains a reference to it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CSGTree Create(params CSGTreeNode[] children)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="RealtimeCSG.Foundation.CSGTreeNode.html">CSGTreeNode</a>[]</span>
+        <span class="parametername">children</span>
+        <p><p>The child nodes that are children of this tree. A tree may not have duplicate children, contain itself or contain a <a class="xref" href="RealtimeCSG.Foundation.CSGTree.html">CSGTree</a>.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="RealtimeCSG.Foundation.CSGTree.html">CSGTree</a>
+        <p><p>A new <a class="xref" href="RealtimeCSG.Foundation.CSGTree.html">CSGTree</a>. May be an invalid node if it failed to create it.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="RealtimeCSG_Foundation_CSGTree_Create_" data-uid="RealtimeCSG.Foundation.CSGTree.Create*"></a>
+  
+  <h4 id="RealtimeCSG_Foundation_CSGTree_Create_System_Int32_RealtimeCSG_Foundation_CSGTreeNode___" data-uid="RealtimeCSG.Foundation.CSGTree.Create(System.Int32,RealtimeCSG.Foundation.CSGTreeNode[])"><a href="#collapsible-RealtimeCSG_Foundation_CSGTree_Create_System_Int32_RealtimeCSG_Foundation_CSGTreeNode___" class="expander" data-toggle="collapse">Create(Int32, CSGTreeNode[])</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Foundation_CSGTree_Create_System_Int32_RealtimeCSG_Foundation_CSGTreeNode___" class="collapse in">
+  <div class="markdown level1 summary"><p>Generates a tree on the native side and returns a <a class="xref" href="RealtimeCSG.Foundation.CSGTree.html">CSGTree</a> struct that contains a reference to it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CSGTree Create(int userID, params CSGTreeNode[] children)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></span>
+        <span class="parametername">userID</span>
+        <p><p>A unique id to help identify this particular tree. For instance, this could be an InstanceID to a <a href="https://docs.unity3d.com/ScriptReference/Object.html">UnityEngine.Object</a>.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="RealtimeCSG.Foundation.CSGTreeNode.html">CSGTreeNode</a>[]</span>
+        <span class="parametername">children</span>
+        <p><p>The child nodes that are children of this tree. A tree may not have duplicate children, contain itself or contain a <a class="xref" href="RealtimeCSG.Foundation.CSGTree.html">CSGTree</a>.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="RealtimeCSG.Foundation.CSGTree.html">CSGTree</a>
+        <p><p>A new <a class="xref" href="RealtimeCSG.Foundation.CSGTree.html">CSGTree</a>. May be an invalid node if it failed to create it.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="RealtimeCSG_Foundation_CSGTree_Destroy_" data-uid="RealtimeCSG.Foundation.CSGTree.Destroy*"></a>
+  
+  <h4 id="RealtimeCSG_Foundation_CSGTree_Destroy" data-uid="RealtimeCSG.Foundation.CSGTree.Destroy"><a href="#collapsible-RealtimeCSG_Foundation_CSGTree_Destroy" class="expander" data-toggle="collapse">Destroy()</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Foundation_CSGTree_Destroy" class="collapse in">
+  <div class="markdown level1 summary"><p>Destroy this <a class="xref" href="RealtimeCSG.Foundation.CSGTreeNode.html">CSGTreeNode</a>. Sets the state to invalid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Destroy()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>
+        <p><p><strong>true</strong> on success, <strong>false</strong> on failure</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="RealtimeCSG_Foundation_CSGTree_GetGeneratedMesh_" data-uid="RealtimeCSG.Foundation.CSGTree.GetGeneratedMesh*"></a>
+  
+  <h4 id="RealtimeCSG_Foundation_CSGTree_GetGeneratedMesh_RealtimeCSG_Foundation_GeneratedMeshDescription_" data-uid="RealtimeCSG.Foundation.CSGTree.GetGeneratedMesh(RealtimeCSG.Foundation.GeneratedMeshDescription)"><a href="#collapsible-RealtimeCSG_Foundation_CSGTree_GetGeneratedMesh_RealtimeCSG_Foundation_GeneratedMeshDescription_" class="expander" data-toggle="collapse">GetGeneratedMesh(GeneratedMeshDescription)</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Foundation_CSGTree_GetGeneratedMesh_RealtimeCSG_Foundation_GeneratedMeshDescription_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates and returns a <a class="xref" href="RealtimeCSG.Foundation.GeneratedMeshContents.html">GeneratedMeshContents</a> for a given <a class="xref" href="RealtimeCSG.Foundation.GeneratedMeshDescription.html">GeneratedMeshDescription</a> created by <a class="xref" href="RealtimeCSG.Foundation.CSGTree.html#RealtimeCSG_Foundation_CSGTree_GetMeshDescriptions_RealtimeCSG_Foundation_MeshQuery___RealtimeCSG_Foundation_VertexChannelFlags_">GetMeshDescriptions(MeshQuery[], VertexChannelFlags)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GeneratedMeshContents GetGeneratedMesh(GeneratedMeshDescription meshDescription)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="RealtimeCSG.Foundation.GeneratedMeshDescription.html">GeneratedMeshDescription</a></span>
+        <span class="parametername">meshDescription</span>
+        <p><p>A <a class="xref" href="RealtimeCSG.Foundation.GeneratedMeshDescription.html">GeneratedMeshDescription</a> created by <a class="xref" href="RealtimeCSG.Foundation.CSGTree.html#RealtimeCSG_Foundation_CSGTree_GetMeshDescriptions_RealtimeCSG_Foundation_MeshQuery___RealtimeCSG_Foundation_VertexChannelFlags_">GetMeshDescriptions(MeshQuery[], VertexChannelFlags)</a>.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="RealtimeCSG.Foundation.GeneratedMeshContents.html">GeneratedMeshContents</a>
+        <p><p>A <a class="xref" href="RealtimeCSG.Foundation.GeneratedMeshContents.html">GeneratedMeshContents</a> that can be used to initialize a <a href="https://docs.unity3d.com/ScriptReference/Mesh.html">UnityEngine.Mesh</a> with.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  <h5 id="RealtimeCSG_Foundation_CSGTree_GetGeneratedMesh_RealtimeCSG_Foundation_GeneratedMeshDescription__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See the <a href="../documentation/createUnityMesh.html">Create Unity Meshes</a> article for more information.</p>
+</div>
+  
+  
+  
+  <h5 id="RealtimeCSG_Foundation_CSGTree_GetGeneratedMesh_RealtimeCSG_Foundation_GeneratedMeshDescription__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="RealtimeCSG.Foundation.CSGTree.html#RealtimeCSG_Foundation_CSGTree_GetMeshDescriptions_RealtimeCSG_Foundation_MeshQuery___RealtimeCSG_Foundation_VertexChannelFlags_">GetMeshDescriptions(MeshQuery[], VertexChannelFlags)</a></div>
+  </div>
+  </div>
+  
+  
+  <a id="RealtimeCSG_Foundation_CSGTree_GetMeshDescriptions_" data-uid="RealtimeCSG.Foundation.CSGTree.GetMeshDescriptions*"></a>
+  
+  <h4 id="RealtimeCSG_Foundation_CSGTree_GetMeshDescriptions_RealtimeCSG_Foundation_MeshQuery___RealtimeCSG_Foundation_VertexChannelFlags_" data-uid="RealtimeCSG.Foundation.CSGTree.GetMeshDescriptions(RealtimeCSG.Foundation.MeshQuery[],RealtimeCSG.Foundation.VertexChannelFlags)"><a href="#collapsible-RealtimeCSG_Foundation_CSGTree_GetMeshDescriptions_RealtimeCSG_Foundation_MeshQuery___RealtimeCSG_Foundation_VertexChannelFlags_" class="expander" data-toggle="collapse">GetMeshDescriptions(MeshQuery[], VertexChannelFlags)</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Foundation_CSGTree_GetMeshDescriptions_RealtimeCSG_Foundation_MeshQuery___RealtimeCSG_Foundation_VertexChannelFlags_" class="collapse in">
+  <div class="markdown level1 summary"><p>Determines what meshes would be generated from the tree from the given <code data-dev-comment-type="paramref" class="paramref">meshQuery</code> and <code data-dev-comment-type="paramref" class="paramref">vertexChannelMask</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GeneratedMeshDescription[] GetMeshDescriptions(MeshQuery[] meshQuery, VertexChannelFlags vertexChannelMask = VertexChannelFlags.Tangent | VertexChannelFlags.Normal | VertexChannelFlags.UV0 | VertexChannelFlags.All)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="RealtimeCSG.Foundation.MeshQuery.html">MeshQuery</a>[]</span>
+        <span class="parametername">meshQuery</span>
+        <p><p>An array of <a class="xref" href="RealtimeCSG.Foundation.MeshQuery.html">MeshQuery</a>&apos;s which describe which surfaces should be combined into meshes</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="RealtimeCSG.Foundation.VertexChannelFlags.html">VertexChannelFlags</a></span>
+        <span class="parametername">vertexChannelMask</span>
+        <p><p>A mask to prevent certain vertex channels to be generated. By default this value is to <a class="xref" href="RealtimeCSG.Foundation.VertexChannelFlags.html#RealtimeCSG_Foundation_VertexChannelFlags_All">All</a>.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="RealtimeCSG.Foundation.GeneratedMeshDescription.html">GeneratedMeshDescription</a>[]
+        <p><p>An array of <a class="xref" href="RealtimeCSG.Foundation.GeneratedMeshDescription.html">GeneratedMeshDescription</a>&apos;s that can be used to generate <a class="xref" href="RealtimeCSG.Foundation.GeneratedMeshContents.html">GeneratedMeshContents</a> using <a class="xref" href="RealtimeCSG.Foundation.CSGTree.html#RealtimeCSG_Foundation_CSGTree_GetGeneratedMesh_RealtimeCSG_Foundation_GeneratedMeshDescription_">GetGeneratedMesh(GeneratedMeshDescription)</a></p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  <h5 id="RealtimeCSG_Foundation_CSGTree_GetMeshDescriptions_RealtimeCSG_Foundation_MeshQuery___RealtimeCSG_Foundation_VertexChannelFlags__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See the <a href="../documentation/createUnityMesh.html">Create Unity Meshes</a> article for more information.</p>
+</div>
+  
+  
+  
+  <h5 id="RealtimeCSG_Foundation_CSGTree_GetMeshDescriptions_RealtimeCSG_Foundation_MeshQuery___RealtimeCSG_Foundation_VertexChannelFlags__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="RealtimeCSG.Foundation.CSGTree.html#RealtimeCSG_Foundation_CSGTree_GetGeneratedMesh_RealtimeCSG_Foundation_GeneratedMeshDescription_">GetGeneratedMesh(GeneratedMeshDescription)</a></div>
+  </div>
+  </div>
+  
+  
+  <a id="RealtimeCSG_Foundation_CSGTree_IndexOf_" data-uid="RealtimeCSG.Foundation.CSGTree.IndexOf*"></a>
+  
+  <h4 id="RealtimeCSG_Foundation_CSGTree_IndexOf_RealtimeCSG_Foundation_CSGTreeNode_" data-uid="RealtimeCSG.Foundation.CSGTree.IndexOf(RealtimeCSG.Foundation.CSGTreeNode)"><a href="#collapsible-RealtimeCSG_Foundation_CSGTree_IndexOf_RealtimeCSG_Foundation_CSGTreeNode_" class="expander" data-toggle="collapse">IndexOf(CSGTreeNode)</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Foundation_CSGTree_IndexOf_RealtimeCSG_Foundation_CSGTreeNode_" class="collapse in">
+  <div class="markdown level1 summary"><p>Determines the index of a specific child in the <a class="xref" href="RealtimeCSG.Foundation.CSGTree.html">CSGTree</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexOf(CSGTreeNode item)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="RealtimeCSG.Foundation.CSGTreeNode.html">CSGTreeNode</a></span>
+        <span class="parametername">item</span>
+        <p><p>The <a class="xref" href="RealtimeCSG.Foundation.CSGTreeNode.html">CSGTreeNode</a> to locate in the <a class="xref" href="RealtimeCSG.Foundation.CSGTree.html">CSGTree</a>.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>
+        <p><p>The index of <code data-dev-comment-type="paramref" class="paramref">item</code> if found in the <a class="xref" href="RealtimeCSG.Foundation.CSGTree.html">CSGTree</a>; otherwise, –1.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="RealtimeCSG_Foundation_CSGTree_Insert_" data-uid="RealtimeCSG.Foundation.CSGTree.Insert*"></a>
+  
+  <h4 id="RealtimeCSG_Foundation_CSGTree_Insert_System_Int32_RealtimeCSG_Foundation_CSGTreeNode_" data-uid="RealtimeCSG.Foundation.CSGTree.Insert(System.Int32,RealtimeCSG.Foundation.CSGTreeNode)"><a href="#collapsible-RealtimeCSG_Foundation_CSGTree_Insert_System_Int32_RealtimeCSG_Foundation_CSGTreeNode_" class="expander" data-toggle="collapse">Insert(Int32, CSGTreeNode)</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Foundation_CSGTree_Insert_System_Int32_RealtimeCSG_Foundation_CSGTreeNode_" class="collapse in">
+  <div class="markdown level1 summary"><p>Inserts an element into the <a class="xref" href="RealtimeCSG.Foundation.CSGTreeNode.html">CSGTreeNode</a> at the specified index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Insert(int index, CSGTreeNode item)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></span>
+        <span class="parametername">index</span>
+        <p><p>The zero-based index at which <code data-dev-comment-type="paramref" class="paramref">item</code> should be inserted.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="RealtimeCSG.Foundation.CSGTreeNode.html">CSGTreeNode</a></span>
+        <span class="parametername">item</span>
+        <p><p>The <a class="xref" href="RealtimeCSG.Foundation.CSGTreeNode.html">CSGTreeNode</a> to insert.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>
+        <p><p><strong>true</strong> on success, <strong>false</strong> on failure</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="RealtimeCSG_Foundation_CSGTree_InsertRange_" data-uid="RealtimeCSG.Foundation.CSGTree.InsertRange*"></a>
+  
+  <h4 id="RealtimeCSG_Foundation_CSGTree_InsertRange_System_Int32_RealtimeCSG_Foundation_CSGTreeNode___" data-uid="RealtimeCSG.Foundation.CSGTree.InsertRange(System.Int32,RealtimeCSG.Foundation.CSGTreeNode[])"><a href="#collapsible-RealtimeCSG_Foundation_CSGTree_InsertRange_System_Int32_RealtimeCSG_Foundation_CSGTreeNode___" class="expander" data-toggle="collapse">InsertRange(Int32, CSGTreeNode[])</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Foundation_CSGTree_InsertRange_System_Int32_RealtimeCSG_Foundation_CSGTreeNode___" class="collapse in">
+  <div class="markdown level1 summary"><p>Inserts the <a class="xref" href="RealtimeCSG.Foundation.CSGTreeNode.html">CSGTreeNode</a>s of an array into the <a class="xref" href="RealtimeCSG.Foundation.CSGTreeNode.html">CSGTreeNode</a> at the specified index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool InsertRange(int index, params CSGTreeNode[] array)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></span>
+        <span class="parametername">index</span>
+        <p><p>The zero-based index at which the new <a class="xref" href="RealtimeCSG.Foundation.CSGTreeNode.html">CSGTreeNode</a>s should be inserted.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="RealtimeCSG.Foundation.CSGTreeNode.html">CSGTreeNode</a>[]</span>
+        <span class="parametername">array</span>
+        <p><p>The array whose <a class="xref" href="RealtimeCSG.Foundation.CSGTreeNode.html">CSGTreeNode</a>s should be inserted into the <a class="xref" href="RealtimeCSG.Foundation.CSGTreeNode.html">CSGTreeNode</a>. The array itself cannot be null.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>
+        <p><p><strong>true</strong> on success, <strong>false</strong> on failure</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="RealtimeCSG_Foundation_CSGTree_Remove_" data-uid="RealtimeCSG.Foundation.CSGTree.Remove*"></a>
+  
+  <h4 id="RealtimeCSG_Foundation_CSGTree_Remove_RealtimeCSG_Foundation_CSGTreeNode_" data-uid="RealtimeCSG.Foundation.CSGTree.Remove(RealtimeCSG.Foundation.CSGTreeNode)"><a href="#collapsible-RealtimeCSG_Foundation_CSGTree_Remove_RealtimeCSG_Foundation_CSGTreeNode_" class="expander" data-toggle="collapse">Remove(CSGTreeNode)</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Foundation_CSGTree_Remove_RealtimeCSG_Foundation_CSGTreeNode_" class="collapse in">
+  <div class="markdown level1 summary"><p>Removes a specific <a class="xref" href="RealtimeCSG.Foundation.CSGTreeNode.html">CSGTreeNode</a> from the <a class="xref" href="RealtimeCSG.Foundation.CSGTree.html">CSGTree</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Remove(CSGTreeNode item)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="RealtimeCSG.Foundation.CSGTreeNode.html">CSGTreeNode</a></span>
+        <span class="parametername">item</span>
+        <p><p>The <a class="xref" href="RealtimeCSG.Foundation.CSGTreeNode.html">CSGTreeNode</a> to remove from the <a class="xref" href="RealtimeCSG.Foundation.CSGTree.html">CSGTree</a>.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>
+        <p><p><strong>true</strong> on success, <strong>false</strong> on failure</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="RealtimeCSG_Foundation_CSGTree_RemoveAt_" data-uid="RealtimeCSG.Foundation.CSGTree.RemoveAt*"></a>
+  
+  <h4 id="RealtimeCSG_Foundation_CSGTree_RemoveAt_System_Int32_" data-uid="RealtimeCSG.Foundation.CSGTree.RemoveAt(System.Int32)"><a href="#collapsible-RealtimeCSG_Foundation_CSGTree_RemoveAt_System_Int32_" class="expander" data-toggle="collapse">RemoveAt(Int32)</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Foundation_CSGTree_RemoveAt_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Removes the child at the specified index of the <a class="xref" href="RealtimeCSG.Foundation.CSGTree.html">CSGTree</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveAt(int index)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></span>
+        <span class="parametername">index</span>
+        <p><p>The zero-based index of the child to remove.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>
+        <p><p><strong>true</strong> on success, <strong>false</strong> on failure</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="RealtimeCSG_Foundation_CSGTree_RemoveRange_" data-uid="RealtimeCSG.Foundation.CSGTree.RemoveRange*"></a>
+  
+  <h4 id="RealtimeCSG_Foundation_CSGTree_RemoveRange_System_Int32_System_Int32_" data-uid="RealtimeCSG.Foundation.CSGTree.RemoveRange(System.Int32,System.Int32)"><a href="#collapsible-RealtimeCSG_Foundation_CSGTree_RemoveRange_System_Int32_System_Int32_" class="expander" data-toggle="collapse">RemoveRange(Int32, Int32)</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Foundation_CSGTree_RemoveRange_System_Int32_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Removes a range of children from the <a class="xref" href="RealtimeCSG.Foundation.CSGTree.html">CSGTree</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveRange(int index, int count)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></span>
+        <span class="parametername">index</span>
+        <p><p>The zero-based starting index of the range of children to remove.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></span>
+        <span class="parametername">count</span>
+        <p><p>The number of children to remove.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>
+        <p><p><strong>true</strong> on success, <strong>false</strong> on failure</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="RealtimeCSG_Foundation_CSGTree_SetDirty_" data-uid="RealtimeCSG.Foundation.CSGTree.SetDirty*"></a>
+  
+  <h4 id="RealtimeCSG_Foundation_CSGTree_SetDirty" data-uid="RealtimeCSG.Foundation.CSGTree.SetDirty"><a href="#collapsible-RealtimeCSG_Foundation_CSGTree_SetDirty" class="expander" data-toggle="collapse">SetDirty()</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Foundation_CSGTree_SetDirty" class="collapse in">
+  <div class="markdown level1 summary"><p>Force set the dirty flag of the <a class="xref" href="RealtimeCSG.Foundation.CSGTreeNode.html">CSGTreeNode</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDirty()</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="RealtimeCSG.Foundation.CSGTreeNode.html">CSGTreeNode</a></div>
+      <div><a class="xref" href="RealtimeCSG.Foundation.CSGTreeBranch.html">CSGTreeBranch</a></div>
+      <div><a class="xref" href="RealtimeCSG.Foundation.CSGTreeBrush.html">CSGTreeBrush</a></div>
+  </div>
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright &copy; 2018 Prenominal B.V.
+            
+          </div>
+        </div>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

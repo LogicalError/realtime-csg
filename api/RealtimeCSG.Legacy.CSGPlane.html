@@ -1,0 +1,1098 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Struct CSGPlane
+   | RealtimeCSG </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Struct CSGPlane
+   | RealtimeCSG ">
+    <meta name="generator" content="docfx 2.31.0.0">
+  
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Oswald|Roboto+Condensed" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+  </head>  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo3_24_2padding.png" alt="RealtimeCSG">
+                <span class="logoFirst">realtime</span> <span class="logoSecond">CSG</span>
+              </a>    </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="RealtimeCSG.Legacy.CSGPlane">
+  <h1 id="RealtimeCSG_Legacy_CSGPlane" data-uid="RealtimeCSG.Legacy.CSGPlane">Struct CSGPlane
+  </h1>
+  <div class="markdown level0 summary"><p>A geometric plane</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+
+  
+  
+  
+  
+  <h5 id="RealtimeCSG_Legacy_CSGPlane_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public struct CSGPlane</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 id="RealtimeCSG_Legacy_CSGPlane_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><div class="NOTE"><h5>note</h5><p>This code will be replaced by <a href="https://docs.unity3d.com/ScriptReference/Plane.html">UnityEngine.Plane</a> eventually. In older versions of Realtime-CSG <a href="https://docs.unity3d.com/ScriptReference/Plane.html">UnityEngine.Plane</a>, Unity&apos;s own Plane, was not serializable and wasn&apos;t an option.</p></div>
+<div class="NOTE"><h5>note</h5><p>This class can be safely serialized.</p></div></div>
+  
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="RealtimeCSG_Legacy_CSGPlane__ctor_" data-uid="RealtimeCSG.Legacy.CSGPlane.#ctor*"></a>
+  
+  <h4 id="RealtimeCSG_Legacy_CSGPlane__ctor_System_Single_System_Single_System_Single_System_Single_" data-uid="RealtimeCSG.Legacy.CSGPlane.#ctor(System.Single,System.Single,System.Single,System.Single)"><a href="#collapsible-RealtimeCSG_Legacy_CSGPlane__ctor_System_Single_System_Single_System_Single_System_Single_" class="expander" data-toggle="collapse">CSGPlane(Single, Single, Single, Single)</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Legacy_CSGPlane__ctor_System_Single_System_Single_System_Single_System_Single_" class="collapse in">
+  <div class="markdown level1 summary"><p>Create a plane by giving the plane equation ax+by+cz-d=0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CSGPlane(float inA, float inB, float inC, float inD)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></span>
+        <span class="parametername">inA</span>
+        <p><p>a in the plane equation: ax+by+cz-d=0</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></span>
+        <span class="parametername">inB</span>
+        <p><p>b in the plane equation: ax+by+cz-d=0</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></span>
+        <span class="parametername">inC</span>
+        <p><p>c in the plane equation: ax+by+cz-d=0</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></span>
+        <span class="parametername">inD</span>
+        <p><p>d in the plane equation: ax+by+cz-d=0</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="RealtimeCSG_Legacy_CSGPlane__ctor_" data-uid="RealtimeCSG.Legacy.CSGPlane.#ctor*"></a>
+  
+  <h4 id="RealtimeCSG_Legacy_CSGPlane__ctor_UnityEngine_Quaternion_Vector3_" data-uid="RealtimeCSG.Legacy.CSGPlane.#ctor(UnityEngine.Quaternion,Vector3)"><a href="#collapsible-RealtimeCSG_Legacy_CSGPlane__ctor_UnityEngine_Quaternion_Vector3_" class="expander" data-toggle="collapse">CSGPlane(UnityEngine.Quaternion, Vector3)</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Legacy_CSGPlane__ctor_UnityEngine_Quaternion_Vector3_" class="collapse in">
+  <div class="markdown level1 summary"><p>Create a plane with a point and a quaternion</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CSGPlane(UnityEngine.Quaternion inRotation, Vector3 pointOnPlane)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.unity3d.com/ScriptReference/Quaternion.html">UnityEngine.Quaternion</a></span>
+        <span class="parametername">inRotation</span>
+        <p><p>The orientation of the plane</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Vector3</span></span>
+        <span class="parametername">pointOnPlane</span>
+        <p><p>The position of the plane</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="RealtimeCSG_Legacy_CSGPlane__ctor_" data-uid="RealtimeCSG.Legacy.CSGPlane.#ctor*"></a>
+  
+  <h4 id="RealtimeCSG_Legacy_CSGPlane__ctor_Vector3_System_Single_" data-uid="RealtimeCSG.Legacy.CSGPlane.#ctor(Vector3,System.Single)"><a href="#collapsible-RealtimeCSG_Legacy_CSGPlane__ctor_Vector3_System_Single_" class="expander" data-toggle="collapse">CSGPlane(Vector3, Single)</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Legacy_CSGPlane__ctor_Vector3_System_Single_" class="collapse in">
+  <div class="markdown level1 summary"><p>Create a plane with a normal and the distance to the origin</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CSGPlane(Vector3 inNormal, float inD)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Vector3</span></span>
+        <span class="parametername">inNormal</span>
+        <p><p>The normal of the plane</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></span>
+        <span class="parametername">inD</span>
+        <p><p>The distance to the origin</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="RealtimeCSG_Legacy_CSGPlane__ctor_" data-uid="RealtimeCSG.Legacy.CSGPlane.#ctor*"></a>
+  
+  <h4 id="RealtimeCSG_Legacy_CSGPlane__ctor_Vector3_Vector3_" data-uid="RealtimeCSG.Legacy.CSGPlane.#ctor(Vector3,Vector3)"><a href="#collapsible-RealtimeCSG_Legacy_CSGPlane__ctor_Vector3_Vector3_" class="expander" data-toggle="collapse">CSGPlane(Vector3, Vector3)</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Legacy_CSGPlane__ctor_Vector3_Vector3_" class="collapse in">
+  <div class="markdown level1 summary"><p>Create a plane with a point and a normal</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CSGPlane(Vector3 inNormal, Vector3 pointOnPlane)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Vector3</span></span>
+        <span class="parametername">inNormal</span>
+        <p><p>The normal of the plane</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Vector3</span></span>
+        <span class="parametername">pointOnPlane</span>
+        <p><p>The position of the plane</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="RealtimeCSG_Legacy_CSGPlane__ctor_" data-uid="RealtimeCSG.Legacy.CSGPlane.#ctor*"></a>
+  
+  <h4 id="RealtimeCSG_Legacy_CSGPlane__ctor_Vector3_Vector3_Vector3_" data-uid="RealtimeCSG.Legacy.CSGPlane.#ctor(Vector3,Vector3,Vector3)"><a href="#collapsible-RealtimeCSG_Legacy_CSGPlane__ctor_Vector3_Vector3_Vector3_" class="expander" data-toggle="collapse">CSGPlane(Vector3, Vector3, Vector3)</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Legacy_CSGPlane__ctor_Vector3_Vector3_Vector3_" class="collapse in">
+  <div class="markdown level1 summary"><p>Calculate a plane from 3 points</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CSGPlane(Vector3 point1, Vector3 point2, Vector3 point3)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Vector3</span></span>
+        <span class="parametername">point1</span>
+        <p><p>First point</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Vector3</span></span>
+        <span class="parametername">point2</span>
+        <p><p>Second point</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Vector3</span></span>
+        <span class="parametername">point3</span>
+        <p><p>Third point</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  
+  <h4 id="RealtimeCSG_Legacy_CSGPlane_a" data-uid="RealtimeCSG.Legacy.CSGPlane.a"><a href="#collapsible-RealtimeCSG_Legacy_CSGPlane_a" class="expander" data-toggle="collapse">a</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Legacy_CSGPlane_a" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float a</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>
+        <p><p>a in the plane equation: ax+by+cz-d=0</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="RealtimeCSG_Legacy_CSGPlane_b" data-uid="RealtimeCSG.Legacy.CSGPlane.b"><a href="#collapsible-RealtimeCSG_Legacy_CSGPlane_b" class="expander" data-toggle="collapse">b</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Legacy_CSGPlane_b" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float b</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>
+        <p><p>b in the plane equation: ax+by+cz-d=0</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="RealtimeCSG_Legacy_CSGPlane_c" data-uid="RealtimeCSG.Legacy.CSGPlane.c"><a href="#collapsible-RealtimeCSG_Legacy_CSGPlane_c" class="expander" data-toggle="collapse">c</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Legacy_CSGPlane_c" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float c</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>
+        <p><p>c in the plane equation: ax+by+cz-d=0</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="RealtimeCSG_Legacy_CSGPlane_d" data-uid="RealtimeCSG.Legacy.CSGPlane.d"><a href="#collapsible-RealtimeCSG_Legacy_CSGPlane_d" class="expander" data-toggle="collapse">d</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Legacy_CSGPlane_d" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float d</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>
+        <p><p>d in the plane equation: ax+by+cz-d=0</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="RealtimeCSG_Legacy_CSGPlane_normal_" data-uid="RealtimeCSG.Legacy.CSGPlane.normal*"></a>
+  
+  <h4 id="RealtimeCSG_Legacy_CSGPlane_normal" data-uid="RealtimeCSG.Legacy.CSGPlane.normal"><a href="#collapsible-RealtimeCSG_Legacy_CSGPlane_normal" class="expander" data-toggle="collapse">normal</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Legacy_CSGPlane_normal" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 normal { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Vector3</span>
+        <p><p>Gets or sets the normal of this plane</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="RealtimeCSG_Legacy_CSGPlane_pointOnPlane_" data-uid="RealtimeCSG.Legacy.CSGPlane.pointOnPlane*"></a>
+  
+  <h4 id="RealtimeCSG_Legacy_CSGPlane_pointOnPlane" data-uid="RealtimeCSG.Legacy.CSGPlane.pointOnPlane"><a href="#collapsible-RealtimeCSG_Legacy_CSGPlane_pointOnPlane" class="expander" data-toggle="collapse">pointOnPlane</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Legacy_CSGPlane_pointOnPlane" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 pointOnPlane { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Vector3</span>
+        <p><p>Point on the plane</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="RealtimeCSG_Legacy_CSGPlane_Distance_" data-uid="RealtimeCSG.Legacy.CSGPlane.Distance*"></a>
+  
+  <h4 id="RealtimeCSG_Legacy_CSGPlane_Distance_Vector3_" data-uid="RealtimeCSG.Legacy.CSGPlane.Distance(Vector3)"><a href="#collapsible-RealtimeCSG_Legacy_CSGPlane_Distance_Vector3_" class="expander" data-toggle="collapse">Distance(Vector3)</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Legacy_CSGPlane_Distance_Vector3_" class="collapse in">
+  <div class="markdown level1 summary"><p>Calculates the distance to a point to this plane</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Distance(Vector3 point)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Vector3</span></span>
+        <span class="parametername">point</span>
+        <p><p>A point</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>
+        <p><p>The distance from the point to the plane</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="RealtimeCSG_Legacy_CSGPlane_Intersection_" data-uid="RealtimeCSG.Legacy.CSGPlane.Intersection*"></a>
+  
+  <h4 id="RealtimeCSG_Legacy_CSGPlane_Intersection_RealtimeCSG_Legacy_CSGPlane_RealtimeCSG_Legacy_CSGPlane_RealtimeCSG_Legacy_CSGPlane_" data-uid="RealtimeCSG.Legacy.CSGPlane.Intersection(RealtimeCSG.Legacy.CSGPlane,RealtimeCSG.Legacy.CSGPlane,RealtimeCSG.Legacy.CSGPlane)"><a href="#collapsible-RealtimeCSG_Legacy_CSGPlane_Intersection_RealtimeCSG_Legacy_CSGPlane_RealtimeCSG_Legacy_CSGPlane_RealtimeCSG_Legacy_CSGPlane_" class="expander" data-toggle="collapse">Intersection(CSGPlane, CSGPlane, CSGPlane)</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Legacy_CSGPlane_Intersection_RealtimeCSG_Legacy_CSGPlane_RealtimeCSG_Legacy_CSGPlane_RealtimeCSG_Legacy_CSGPlane_" class="collapse in">
+  <div class="markdown level1 summary"><p>Calculates the intersection point between 3 planes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 Intersection(CSGPlane inPlane1, CSGPlane inPlane2, CSGPlane inPlane3)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="RealtimeCSG.Legacy.CSGPlane.html">CSGPlane</a></span>
+        <span class="parametername">inPlane1</span>
+        <p><p>The first plane</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="RealtimeCSG.Legacy.CSGPlane.html">CSGPlane</a></span>
+        <span class="parametername">inPlane2</span>
+        <p><p>The second plane</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="RealtimeCSG.Legacy.CSGPlane.html">CSGPlane</a></span>
+        <span class="parametername">inPlane3</span>
+        <p><p>The third plane</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Vector3</span>
+        <p><p>The intersection point between the 3 planes.The returned point will consist out NaN values when there is no intersection.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="RealtimeCSG_Legacy_CSGPlane_LineIntersection_" data-uid="RealtimeCSG.Legacy.CSGPlane.LineIntersection*"></a>
+  
+  <h4 id="RealtimeCSG_Legacy_CSGPlane_LineIntersection_Vector3_Vector3_" data-uid="RealtimeCSG.Legacy.CSGPlane.LineIntersection(Vector3,Vector3)"><a href="#collapsible-RealtimeCSG_Legacy_CSGPlane_LineIntersection_Vector3_Vector3_" class="expander" data-toggle="collapse">LineIntersection(Vector3, Vector3)</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Legacy_CSGPlane_LineIntersection_Vector3_Vector3_" class="collapse in">
+  <div class="markdown level1 summary"><p>Calculates an intersection between a line and the plane</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 LineIntersection(Vector3 start, Vector3 end)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Vector3</span></span>
+        <span class="parametername">start</span>
+        <p><p>Start of the line</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Vector3</span></span>
+        <span class="parametername">end</span>
+        <p><p>End of the line</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Vector3</span>
+        <p><p>Intersection point</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="RealtimeCSG_Legacy_CSGPlane_Negated_" data-uid="RealtimeCSG.Legacy.CSGPlane.Negated*"></a>
+  
+  <h4 id="RealtimeCSG_Legacy_CSGPlane_Negated" data-uid="RealtimeCSG.Legacy.CSGPlane.Negated"><a href="#collapsible-RealtimeCSG_Legacy_CSGPlane_Negated" class="expander" data-toggle="collapse">Negated()</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Legacy_CSGPlane_Negated" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a copy of this plane that has its direction inverted</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CSGPlane Negated()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="RealtimeCSG.Legacy.CSGPlane.html">CSGPlane</a>
+        <p><p>A new plane that is flipped</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="RealtimeCSG_Legacy_CSGPlane_Normalize_" data-uid="RealtimeCSG.Legacy.CSGPlane.Normalize*"></a>
+  
+  <h4 id="RealtimeCSG_Legacy_CSGPlane_Normalize" data-uid="RealtimeCSG.Legacy.CSGPlane.Normalize"><a href="#collapsible-RealtimeCSG_Legacy_CSGPlane_Normalize" class="expander" data-toggle="collapse">Normalize()</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Legacy_CSGPlane_Normalize" class="collapse in">
+  <div class="markdown level1 summary"><p>Normalize the normal of the plane</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Normalize()</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="RealtimeCSG_Legacy_CSGPlane_Project_" data-uid="RealtimeCSG.Legacy.CSGPlane.Project*"></a>
+  
+  <h4 id="RealtimeCSG_Legacy_CSGPlane_Project_Vector3_" data-uid="RealtimeCSG.Legacy.CSGPlane.Project(Vector3)"><a href="#collapsible-RealtimeCSG_Legacy_CSGPlane_Project_Vector3_" class="expander" data-toggle="collapse">Project(Vector3)</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Legacy_CSGPlane_Project_Vector3_" class="collapse in">
+  <div class="markdown level1 summary"><p>Project a point on this plane</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 Project(Vector3 point)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Vector3</span></span>
+        <span class="parametername">point</span>
+        <p><p>A point</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Vector3</span>
+        <p><p>The projected point</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="RealtimeCSG_Legacy_CSGPlane_RayIntersection_" data-uid="RealtimeCSG.Legacy.CSGPlane.RayIntersection*"></a>
+  
+  <h4 id="RealtimeCSG_Legacy_CSGPlane_RayIntersection_UnityEngine_Ray_" data-uid="RealtimeCSG.Legacy.CSGPlane.RayIntersection(UnityEngine.Ray)"><a href="#collapsible-RealtimeCSG_Legacy_CSGPlane_RayIntersection_UnityEngine_Ray_" class="expander" data-toggle="collapse">RayIntersection(UnityEngine.Ray)</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Legacy_CSGPlane_RayIntersection_UnityEngine_Ray_" class="collapse in">
+  <div class="markdown level1 summary"><p>Calculate  an intersection with a given ray and the plane.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 RayIntersection(UnityEngine.Ray ray)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.unity3d.com/ScriptReference/Ray.html">UnityEngine.Ray</a></span>
+        <span class="parametername">ray</span>
+        <p><p>The ray to find an intersection with</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Vector3</span>
+        <p><p>The intersection point.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="RealtimeCSG_Legacy_CSGPlane_Transform_" data-uid="RealtimeCSG.Legacy.CSGPlane.Transform*"></a>
+  
+  <h4 id="RealtimeCSG_Legacy_CSGPlane_Transform_UnityEngine_Matrix4x4_" data-uid="RealtimeCSG.Legacy.CSGPlane.Transform(UnityEngine.Matrix4x4)"><a href="#collapsible-RealtimeCSG_Legacy_CSGPlane_Transform_UnityEngine_Matrix4x4_" class="expander" data-toggle="collapse">Transform(UnityEngine.Matrix4x4)</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Legacy_CSGPlane_Transform_UnityEngine_Matrix4x4_" class="collapse in">
+  <div class="markdown level1 summary"><p>Transform the plane with the given transformation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Transform(UnityEngine.Matrix4x4 transformation)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.unity3d.com/ScriptReference/Matrix4x4.html">UnityEngine.Matrix4x4</a></span>
+        <span class="parametername">transformation</span>
+        <p><p>The transformation to transform the plane with</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="RealtimeCSG_Legacy_CSGPlane_Translated_" data-uid="RealtimeCSG.Legacy.CSGPlane.Translated*"></a>
+  
+  <h4 id="RealtimeCSG_Legacy_CSGPlane_Translated_Vector3_" data-uid="RealtimeCSG.Legacy.CSGPlane.Translated(Vector3)"><a href="#collapsible-RealtimeCSG_Legacy_CSGPlane_Translated_Vector3_" class="expander" data-toggle="collapse">Translated(Vector3)</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Legacy_CSGPlane_Translated_Vector3_" class="collapse in">
+  <div class="markdown level1 summary"><p>Translates a plane in space</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CSGPlane Translated(Vector3 translation)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Vector3</span></span>
+        <span class="parametername">translation</span>
+        <p><p>A vector to translate the plane over</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="RealtimeCSG.Legacy.CSGPlane.html">CSGPlane</a>
+        <p><p>A plane translated by <code data-dev-comment-type="paramref" class="paramref">translation</code></p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="RealtimeCSG_Legacy_CSGPlane_TryRayIntersection_" data-uid="RealtimeCSG.Legacy.CSGPlane.TryRayIntersection*"></a>
+  
+  <h4 id="RealtimeCSG_Legacy_CSGPlane_TryRayIntersection_UnityEngine_Ray_Vector3__" data-uid="RealtimeCSG.Legacy.CSGPlane.TryRayIntersection(UnityEngine.Ray,Vector3@)"><a href="#collapsible-RealtimeCSG_Legacy_CSGPlane_TryRayIntersection_UnityEngine_Ray_Vector3__" class="expander" data-toggle="collapse">TryRayIntersection(UnityEngine.Ray, out Vector3)</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Legacy_CSGPlane_TryRayIntersection_UnityEngine_Ray_Vector3__" class="collapse in">
+  <div class="markdown level1 summary"><p>Attempt to find an intersection with a given ray and the plane.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryRayIntersection(UnityEngine.Ray ray, out Vector3 intersection)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.unity3d.com/ScriptReference/Ray.html">UnityEngine.Ray</a></span>
+        <span class="parametername">ray</span>
+        <p><p>The ray to find an intersection with</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Vector3</span></span>
+        <span class="parametername">intersection</span>
+        <p><p>The intersection point, if found</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>
+        <p><p><strong>true</strong> if we found an intersection, <strong>false</strong> if we didn&apos;t.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright &copy; 2018 Prenominal B.V.
+            
+          </div>
+        </div>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

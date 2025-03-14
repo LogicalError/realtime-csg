@@ -1,0 +1,381 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Struct MeshQuery
+   | RealtimeCSG </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Struct MeshQuery
+   | RealtimeCSG ">
+    <meta name="generator" content="docfx 2.31.0.0">
+  
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Oswald|Roboto+Condensed" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+  </head>  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo3_24_2padding.png" alt="RealtimeCSG">
+                <span class="logoFirst">realtime</span> <span class="logoSecond">CSG</span>
+              </a>    </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="RealtimeCSG.Foundation.MeshQuery">
+  <h1 id="RealtimeCSG_Foundation_MeshQuery" data-uid="RealtimeCSG.Foundation.MeshQuery">Struct MeshQuery
+  </h1>
+  <div class="markdown level0 summary"><p>Describes what surface parameters, and optionally which surface parameter, to query for in a model, to create a mesh.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+
+  
+  
+  
+  
+  <h5 id="RealtimeCSG_Foundation_MeshQuery_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public struct MeshQuery</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 id="RealtimeCSG_Foundation_MeshQuery_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>See the <a href="../documentation/createUnityMesh.html">Create Unity Meshes</a> article for more information.
+<div class="NOTE"><h5>note</h5><p>This struct is mirrored on the native side and cannot be modified.</p></div></p>
+</div>
+  
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="RealtimeCSG_Foundation_MeshQuery__ctor_" data-uid="RealtimeCSG.Foundation.MeshQuery.#ctor*"></a>
+  
+  <h4 id="RealtimeCSG_Foundation_MeshQuery__ctor_RealtimeCSG_Foundation_LayerUsageFlags_RealtimeCSG_Foundation_LayerUsageFlags_RealtimeCSG_Foundation_LayerParameterIndex_RealtimeCSG_Foundation_VertexChannelFlags_" data-uid="RealtimeCSG.Foundation.MeshQuery.#ctor(RealtimeCSG.Foundation.LayerUsageFlags,RealtimeCSG.Foundation.LayerUsageFlags,RealtimeCSG.Foundation.LayerParameterIndex,RealtimeCSG.Foundation.VertexChannelFlags)"><a href="#collapsible-RealtimeCSG_Foundation_MeshQuery__ctor_RealtimeCSG_Foundation_LayerUsageFlags_RealtimeCSG_Foundation_LayerUsageFlags_RealtimeCSG_Foundation_LayerParameterIndex_RealtimeCSG_Foundation_VertexChannelFlags_" class="expander" data-toggle="collapse">MeshQuery(LayerUsageFlags, LayerUsageFlags, LayerParameterIndex, VertexChannelFlags)</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Foundation_MeshQuery__ctor_RealtimeCSG_Foundation_LayerUsageFlags_RealtimeCSG_Foundation_LayerUsageFlags_RealtimeCSG_Foundation_LayerParameterIndex_RealtimeCSG_Foundation_VertexChannelFlags_" class="collapse in">
+  <div class="markdown level1 summary"><p>Constructs a <a class="xref" href="RealtimeCSG.Foundation.MeshQuery.html">MeshQuery</a> to use to specify which surfaces should be combined into meshes, and should they be subdivided by a particular layer parameter index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MeshQuery(LayerUsageFlags query, LayerUsageFlags mask = LayerUsageFlags.None, LayerParameterIndex parameterIndex = LayerParameterIndex.None, VertexChannelFlags vertexChannels = VertexChannelFlags.Position)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="RealtimeCSG.Foundation.LayerUsageFlags.html">LayerUsageFlags</a></span>
+        <span class="parametername">query</span>
+        <p><p>Which layer combination would we like to look for and generate a mesh with.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="RealtimeCSG.Foundation.LayerUsageFlags.html">LayerUsageFlags</a></span>
+        <span class="parametername">mask</span>
+        <p><p>What layers do we ignore, and what layers do we include in our comparison. When this value is <a class="xref" href="RealtimeCSG.Foundation.LayerUsageFlags.html#RealtimeCSG_Foundation_LayerUsageFlags_None">None</a>, <code data-dev-comment-type="paramref" class="paramref">mask</code> is set to be equal to <code data-dev-comment-type="paramref" class="paramref">query</code>.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="RealtimeCSG.Foundation.LayerParameterIndex.html">LayerParameterIndex</a></span>
+        <span class="parametername">parameterIndex</span>
+        <p><p>Which parameter index we use to, for example, differentiate between different <a href="https://docs.unity3d.com/ScriptReference/Material.html">UnityEngine.Material</a>s</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="RealtimeCSG.Foundation.VertexChannelFlags.html">VertexChannelFlags</a></span>
+        <span class="parametername">vertexChannels</span>
+        <p><p>Which vertex channels need to be used for the meshes we&apos;d like to generate.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h5 id="RealtimeCSG_Foundation_MeshQuery__ctor_RealtimeCSG_Foundation_LayerUsageFlags_RealtimeCSG_Foundation_LayerUsageFlags_RealtimeCSG_Foundation_LayerParameterIndex_RealtimeCSG_Foundation_VertexChannelFlags__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="RealtimeCSG.Foundation.SurfaceLayers.html">SurfaceLayers</a></div>
+  </div>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="RealtimeCSG_Foundation_MeshQuery_LayerParameterIndex_" data-uid="RealtimeCSG.Foundation.MeshQuery.LayerParameterIndex*"></a>
+  
+  <h4 id="RealtimeCSG_Foundation_MeshQuery_LayerParameterIndex" data-uid="RealtimeCSG.Foundation.MeshQuery.LayerParameterIndex"><a href="#collapsible-RealtimeCSG_Foundation_MeshQuery_LayerParameterIndex" class="expander" data-toggle="collapse">LayerParameterIndex</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Foundation_MeshQuery_LayerParameterIndex" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LayerParameterIndex LayerParameterIndex { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="RealtimeCSG.Foundation.LayerParameterIndex.html">LayerParameterIndex</a>
+        <p><p>Which parameter index we use to, for example, differentiate between different <a href="https://docs.unity3d.com/ScriptReference/Material.html">UnityEngine.Material</a>s.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  <h5 id="RealtimeCSG_Foundation_MeshQuery_LayerParameterIndex_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="RealtimeCSG.Foundation.LayerParameterIndex.html">LayerParameterIndex</a></div>
+      <div><a class="xref" href="RealtimeCSG.Foundation.SurfaceLayers.html">SurfaceLayers</a></div>
+      <div><a class="xref" href="RealtimeCSG.Foundation.BrushMesh.Polygon.html">BrushMesh.Polygon</a></div>
+  </div>
+  </div>
+  
+  
+  <a id="RealtimeCSG_Foundation_MeshQuery_LayerQuery_" data-uid="RealtimeCSG.Foundation.MeshQuery.LayerQuery*"></a>
+  
+  <h4 id="RealtimeCSG_Foundation_MeshQuery_LayerQuery" data-uid="RealtimeCSG.Foundation.MeshQuery.LayerQuery"><a href="#collapsible-RealtimeCSG_Foundation_MeshQuery_LayerQuery" class="expander" data-toggle="collapse">LayerQuery</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Foundation_MeshQuery_LayerQuery" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LayerUsageFlags LayerQuery { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="RealtimeCSG.Foundation.LayerUsageFlags.html">LayerUsageFlags</a>
+        <p><p>Which layer combination would we like to look for and generate a mesh with</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  <h5 id="RealtimeCSG_Foundation_MeshQuery_LayerQuery_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="RealtimeCSG.Foundation.SurfaceLayers.html">SurfaceLayers</a></div>
+      <div><a class="xref" href="RealtimeCSG.Foundation.BrushMesh.Polygon.html">BrushMesh.Polygon</a></div>
+  </div>
+  </div>
+  
+  
+  <a id="RealtimeCSG_Foundation_MeshQuery_LayerQueryMask_" data-uid="RealtimeCSG.Foundation.MeshQuery.LayerQueryMask*"></a>
+  
+  <h4 id="RealtimeCSG_Foundation_MeshQuery_LayerQueryMask" data-uid="RealtimeCSG.Foundation.MeshQuery.LayerQueryMask"><a href="#collapsible-RealtimeCSG_Foundation_MeshQuery_LayerQueryMask" class="expander" data-toggle="collapse">LayerQueryMask</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Foundation_MeshQuery_LayerQueryMask" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LayerUsageFlags LayerQueryMask { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="RealtimeCSG.Foundation.LayerUsageFlags.html">LayerUsageFlags</a>
+        <p><p>What layers do we ignore, and what layers do we include in our comparison</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  <h5 id="RealtimeCSG_Foundation_MeshQuery_LayerQueryMask_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="RealtimeCSG.Foundation.SurfaceLayers.html">SurfaceLayers</a></div>
+      <div><a class="xref" href="RealtimeCSG.Foundation.BrushMesh.Polygon.html">BrushMesh.Polygon</a></div>
+  </div>
+  </div>
+  
+  
+  <a id="RealtimeCSG_Foundation_MeshQuery_UsedVertexChannels_" data-uid="RealtimeCSG.Foundation.MeshQuery.UsedVertexChannels*"></a>
+  
+  <h4 id="RealtimeCSG_Foundation_MeshQuery_UsedVertexChannels" data-uid="RealtimeCSG.Foundation.MeshQuery.UsedVertexChannels"><a href="#collapsible-RealtimeCSG_Foundation_MeshQuery_UsedVertexChannels" class="expander" data-toggle="collapse">UsedVertexChannels</a></h4>
+  
+  <div id="collapsible-RealtimeCSG_Foundation_MeshQuery_UsedVertexChannels" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VertexChannelFlags UsedVertexChannels { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="RealtimeCSG.Foundation.VertexChannelFlags.html">VertexChannelFlags</a>
+        <p><p>Which vertex channels need to be used for the meshes we&apos;d like to generate</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  <h5 id="RealtimeCSG_Foundation_MeshQuery_UsedVertexChannels_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="RealtimeCSG.Foundation.CSGTree.html#RealtimeCSG_Foundation_CSGTree_GetMeshDescriptions_RealtimeCSG_Foundation_MeshQuery___RealtimeCSG_Foundation_VertexChannelFlags_">GetMeshDescriptions(MeshQuery[], VertexChannelFlags)</a></div>
+  </div>
+  </div>
+  
+  
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="RealtimeCSG.Foundation.SurfaceLayers.html">SurfaceLayers</a></div>
+      <div><a class="xref" href="RealtimeCSG.Foundation.BrushMesh.Polygon.html">BrushMesh.Polygon</a></div>
+      <div><a class="xref" href="RealtimeCSG.Foundation.LayerUsageFlags.html">LayerUsageFlags</a></div>
+      <div><a class="xref" href="RealtimeCSG.Foundation.LayerParameterIndex.html">LayerParameterIndex</a></div>
+      <div><a class="xref" href="RealtimeCSG.Foundation.CSGTree.html#RealtimeCSG_Foundation_CSGTree_GetMeshDescriptions_RealtimeCSG_Foundation_MeshQuery___RealtimeCSG_Foundation_VertexChannelFlags_">GetMeshDescriptions(MeshQuery[], VertexChannelFlags)</a></div>
+  </div>
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright &copy; 2018 Prenominal B.V.
+            
+          </div>
+        </div>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

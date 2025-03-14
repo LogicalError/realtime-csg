@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Creating Unity Meshes | RealtimeCSG </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Creating Unity Meshes | RealtimeCSG ">
+    <meta name="generator" content="docfx 2.31.0.0">
+  
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Oswald|Roboto+Condensed" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+  </head>  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo3_24_2padding.png" alt="RealtimeCSG">
+                <span class="logoFirst">realtime</span> <span class="logoSecond">CSG</span>
+              </a>    </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="creating-unity-meshes">Creating Unity Meshes</h1>
+
+<p>This page is a <em>work in progress</em>. It will be updated within the next weeks.</p>
+<p>For the time being, here&#39;s an example instead:</p>
+<pre><code class="lang-csharp" name="CreateUnityMesh" title="generateMesh.cs">// The mesh queries define how meshes are generated using the BrushMesh surface layer information
+MeshQuery[] meshQueries = GetMeshQueries();
+
+
+// Create a tree
+// Note: this can be cached and updated separately.
+CSGTree tree = CreateTree();
+
+
+// At this point, when you have a tree that you update frequently, you can also potentially check if it&#39;s Dirty or not.
+// If it is, it means it has been modified since the last time tree.GetMeshDescriptions has been called.
+
+
+// Find all the potential meshes that could be generated with our queries.
+// There is no guarantee that these meshes will exist. It might also be split into multiple meshes when it&#39;s too large
+GeneratedMeshDescription[] meshDescriptions = tree.GetMeshDescriptions(meshQueries, VertexChannelFlags.All);
+
+if (meshDescriptions != null)
+{
+    // Iterate through all the meshes that we&#39;ve found
+    foreach (var meshDescription in meshDescriptions)
+    {
+        // At this point, it&#39;s possible to check the Hash values stored in meshDescription, 
+        // to check if this particular type of mesh has already been generated before (perhaps in a previous iteration)
+        // You could then potentially early out and avoid retrieving the generated mesh and converting it into a new UnityEngine.Mesh.
+
+        // Actually generate the mesh on the native side, potentially generate smooth normals etc. and retrieve the mesh.
+        GeneratedMeshContents contents = tree.GetGeneratedMesh(meshDescription);
+
+        // Note: It&#39;s possible to re-use this UnityEngine.Mesh
+        UnityEngine.Mesh unityMesh = new UnityEngine.Mesh();
+
+        // Copy the generated mesh to the UnityEngine.Mesh
+        contents.CopyTo(unityMesh);
+
+        // ... assign it to a MeshRenderer/MeshCollider etc.
+    }
+}
+</code></pre><p>Note: See &quot;<a href="CSGTrees.html">CSG Trees</a>&quot; on how to create the CSG tree in this example<br>Note: See &quot;<a href="meshQuery.html">Mesh Queries</a>&quot; on how to create the Mesh Queries in this example </p>
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright &copy; 2018 Prenominal B.V.
+            
+          </div>
+        </div>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
